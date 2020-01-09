@@ -1,0 +1,551 @@
+.edgeLoad-EDGE-10163113 { visibility:hidden; }
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+
+}
+
+body .logo img{
+	border-radius: .7em;
+}
+
+header{
+	background: #b4ddb4; /* Old browsers */
+	background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 26%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b4ddb4), color-stop(17%,#83c783), color-stop(26%,#52b152), color-stop(67%,#008a00), color-stop(83%,#005700), color-stop(100%,#002400)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 26%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 26%,#008a00 67%,#005700 83%,#002400 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 26%,#008a00 67%,#005700 83%,#002400 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 26%,#008a00 67%,#005700 83%,#002400 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+	padding:0.5em 0 ;
+
+}
+
+header h1{
+	color:white;
+	font-style:italic;
+	font-size: 2em;
+	position: relative;
+	bottom: 5em;
+	margin: 0;
+	margin-left: .3em;
+}
+
+nav{
+	background: #9dd53a; /* Old browsers */
+	background: -moz-linear-gradient(top, #9dd53a 0%, #a1d54f 50%, #80c217 51%, #7cbc0a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#9dd53a), color-stop(50%,#a1d54f), color-stop(51%,#80c217), color-stop(100%,#7cbc0a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #9dd53a 0%,#a1d54f 50%,#80c217 51%,#7cbc0a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9dd53a', endColorstr='#7cbc0a',GradientType=0 ); /* IE6-9 */
+	margin-bottom: 2em;
+
+	
+
+}
+
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding:0;
+
+}
+
+/*estilo de los menus */
+nav ul li{
+	display: inline-block;
+	width: 19%;
+	border-right: 2px solid #ccc;
+}
+
+nav ul li a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+	display: block;
+	padding: 0.2em .4em;
+	position: relative;
+
+}
+
+#p{
+	margin: 75px auto;
+	font-size: 17px;
+}
+
+/* probando */
+
+
+/* estilo de los submenus */
+nav li ul{
+	display: none;
+	position: absolute;
+	width: 13%;
+
+
+}
+
+/* estilo de cada uno de los elementos(li) del submenu */
+nav li ul li{ 
+	width: 100%;
+	display: inline-block;
+	border-bottom: 2px solid #913228; /*la lina de color de abajo */
+
+
+}
+
+nav li ul li ul{
+	width: 80%;
+	right:-140px;
+    top:30px;
+}
+
+
+/*un poco de decoracion a los enlaces de nuestro submenu al estar el cursor sobre ellos con ayuda de el selector :hover */
+nav li:hover>ul{
+	background: rgba(28, 90, 218, 0.4);
+	color:#6A5ACD;
+ 	display: block;
+}
+
+
+/*fin */
+
+
+nav ul li a:hover{ 
+	background: rgba(28, 90, 218, 0.4);
+	color:#6A5ACD;
+}
+
+
+
+
+
+footer{
+	background: #d8e0de; /* Old browsers */
+	background: -moz-linear-gradient(top, #d8e0de 0%, #aebfbc 22%, #99afab 33%, #8ea6a2 50%, #829d98 67%, #4e5c5a 95%, #0e0e0e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#d8e0de), color-stop(22%,#aebfbc), color-stop(33%,#99afab), color-stop(50%,#8ea6a2), color-stop(67%,#829d98), color-stop(95%,#4e5c5a), color-stop(100%,#0e0e0e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 95%,#0e0e0e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 95%,#0e0e0e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 95%,#0e0e0e 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #d8e0de 0%,#aebfbc 22%,#99afab 33%,#8ea6a2 50%,#829d98 67%,#4e5c5a 95%,#0e0e0e 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d8e0de', endColorstr='#0e0e0e',GradientType=0 ); /* IE6-9 */
+	clear:both;
+	padding: 0.6em;
+	text-align: center;
+	font-style: italic;
+	font-size: .8em;
+	margin-top: 2em;
+}
+
+
+/*FIN HOME */
+
+
+/*INICIO DONDE VIAJO */
+
+.provincia{
+	border: 2px solid #2FEE52;
+	border-radius: .6em;
+	margin: 1em 0; /* para eliminar el margen y no quede tan pegado*/
+	-mox-box-sizing:border-box;
+	padding: 1em;
+	overflow: hidden;
+
+}
+
+
+.provincia .info h4{
+	font-style: verdana;
+	color: #2e64a1;
+	font-size:1.2em; 
+	font-weight: 500;
+	margin: 0 0 1em;  
+	border-bottom: 1px solid #1A00FF;
+	padding-bottom: 0.5em;
+
+}
+
+.info h4 a{
+	text-decoration: none;
+	color: #FF00DE;
+}
+
+
+.provincia .info p{
+	font-size: .8em;
+}
+
+.holder p{
+	font-size: .9em;
+}
+
+
+
+
+
+/* FIN */
+
+
+
+
+/*INICIO PROVINCIAS INDIVIDUALES */
+
+
+.provincias{
+	border: 2px solid #2FEE52;
+	border-radius: .6em;
+	margin: 1em 0; /* para eliminar el margen y no quede tan pegado*/
+	-mox-box-sizing:border-box;
+	box-sizing:border-box;
+	padding: 1em;
+	overflow: hidden; /* PARA QUE SE VEA TODO EL PAQUETE ENTERO SI NO SE VEN ELEMENTOS */
+}
+
+.provincias  figure{
+	display: inline-block;
+}
+
+.provincias figure img{
+	height: 200px;
+	width: 300px;
+	border-radius: .8em;
+}
+
+
+
+.provincias.informacion{
+	width: 75%;
+	
+}
+
+.provincias .informacion p{
+	font-size: .8em;
+	
+}
+
+.provincias .informacion h4{
+	color: #2e64a1;
+	font-size:1.2em; 
+	font-style:italic;
+	font-weight: 500;
+	margin: 0 0 1em;  
+	border-bottom: 1px solid #1A00FF;
+	padding-bottom: 0.5em;
+}
+
+.provincias h4 a{
+	text-decoration: none;
+	color: #FF00DE;
+}
+
+
+/*NORTE */
+
+.provincias:nth-child(odd) figure{ /*IMPAR */
+	float:left;
+	margin: 0 1em 0 0; /*TOP DRCHA BOTTOM LEF */
+}
+.provincias:nth-child(odd) .informacion{
+	float: right;
+	width: 63%;
+
+}
+
+.provincias:nth-child(even) figure{/*PAR */
+	float: right;
+	margin: 0 0 0 1em; /*TOP DRCHA BOTTOM LEF */
+}
+
+.provincias:nth-child(even) .informacion{
+	float:left;
+	width: 63%;
+}
+
+/*FIN  ACOMODAMIENTO NORTE */
+
+
+
+
+/*COMIENZO PAISES */
+
+
+
+.paises figure img{
+	height: 200px;
+	width: 300px;
+	border-radius: .8em;
+}
+
+
+
+.paises{
+	border: 2px solid #2FEE52;
+	border-radius: .6em;
+	margin: 1em 0; /* para eliminar el margen y no quede tan pegado*/
+	-mox-box-sizing:border-box;
+	box-sizing:border-box;
+	padding: 1em;
+	overflow: hidden; /* PARA QUE SE VEA TODO EL PAQUETE ENTERO SI NO SE VEN ELEMENTOS */
+}
+
+.paises  figure{
+	display: inline-block;
+}
+
+.paises.informacion{
+	width: 75%;
+	
+}
+
+.paises .informacion p{
+	font-size: .8em;
+	
+}
+
+.paises .informacion a{
+	text-decoration: none;
+	color:#FF00DE;
+}
+
+
+.paises .informacion h4{
+	color: #2e64a1;
+	font-size:1.2em; 
+	font-style:italic;
+	font-weight: 500;
+	margin: 0 0 1em;  
+	border-bottom: 1px solid #1A00FF;
+	padding-bottom: 0.5em;
+}
+
+.paises:nth-child(odd) figure{ /*IMPAR */
+	float:left;
+	margin: 0 1em 0 0; /*TOP DRCHA BOTTOM LEF */
+}
+.paises:nth-child(odd) .informacion{
+	float: right;
+	width: 63%;
+
+}
+
+.paises:nth-child(even) figure{/*PAR */
+	float: right;
+	margin: 0 0 0 1em; /*TOP DRCHA BOTTOM LEF */
+}
+
+.paises:nth-child(even) .informacion{
+	float:left;
+	width: 63%
+}
+
+
+/*CIUDADES */
+
+
+.ciudades  figure img {
+	height: 200px;
+	width: 400px;
+	border-radius: .8em;
+	float: center;
+}
+
+
+
+.ciudades {
+	border: 2px solid #2FEE52;
+	border-radius: .6em;
+	margin: 1em 0; /* para eliminar el margen y no quede tan pegado*/
+	-mox-box-sizing:border-box;
+	box-sizing:border-box;
+	padding: 1em;
+	overflow: hidden; /* PARA QUE SE VEA TODO EL PAQUETE ENTERO SI NO SE VEN ELEMENTOS */
+}
+
+.ciudades h3{
+	color:#113ADF;
+	margin: 0 0 1em;  
+	border-bottom: 1px solid #DA09DD;
+	padding-bottom: 0.5em;
+
+}
+.ciudades p{
+	font-size: .8em;
+	
+}
+
+
+
+
+
+
+/*SERVICIOS */
+
+.servicios p{
+	font-size: 15px;
+	font-style: italic;
+}
+
+.servicios ul{
+	font-size: .9em;
+}
+
+
+
+/*CONTACTOS */
+
+
+.columna{
+	width: 50%;
+	-moz-box-sizing:border-box;
+	box-sizing:border-box;
+	padding: 0.625em;
+}
+
+
+
+.right{
+	float: right;
+}
+
+.left{
+	float: left;
+}
+
+
+.columna.left li {
+	font-size:.8em;
+	
+}
+
+
+.formulario label{
+	display: inline-block;
+	vertical-align: top;
+	width: 16%;
+}
+
+.formulario input, .formulario textarea{
+	background: #10F5E2;
+	border-radius: 5px;
+	border: 1px solid green;
+	font-size: .8em; /*fuente que va ir dentro de  la caja */
+	padding: .4em .6em;
+	width: 80%;
+}
+
+.formulario textarea { /*solo la parte donde van los comentarios */
+	height: 10em;
+	resize:none; /* para que el campo no se agrande y quede fijo */
+}
+
+.formulario input[type="submit"]{ /*modifico el boton enviar */
+	background:#6da9ed;
+	box-shadow:0 0 1px rgba(0,0,0,0.4);
+	font-size: 1em;
+	padding: .4em 2em;
+	text-align: center;
+	width: auto;			/* reseteo el ancho que coloque en la linea 339 porque los input tenian anchod de 80%*/ 	
+}
+
+.formulario textarea { /*solo la parte donde van los comentarios */
+	height: 10em;
+	resize:none; /* para que el campo no se agrande y quede fijo */
+}
+
+.parrafo{
+	float: left;
+}
+
+
+
+/*PAGOS*/
+
+table {
+	width: 100%;
+	border: 1px solid #ddd;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-spacing: 0;
+	border-collapse: collapse; /*BUSCAR QUE ES */
+	border-color: gray;
+}
+
+th, td {
+padding: 0.5em 10px;
+border: 1px solid #ddd;
+border-left-width: 0;
+border-top-width: 0;
+}
+
+
+
+/*COSAS EN COMUN */
+.holder{
+	max-width: 960px; /* colocar la maxima resolucion de ancho */
+	margin: 0 auto ; /* alto y bajo 0 y laterales automaticos */
+
+}
+
+h2{
+	font-weight: 400;
+	color: #2e64a1;
+	margin: 0 0 1em; /*top, laterales, bottom */
+}
+
+h3{
+
+	color: #2e64a1;
+	font-style:italic;
+	font-size: 1em;
+	margin: 0;
+}
+
+#negrita{
+	font-style: italic;
+	font-weight: bold;
+}
+
+
+#facebook{
+	float: right;
+	position: absolute;
+	top: 172px;
+	right: 282px;
+
+}
+
+#twitter{
+	float: right;
+	position: absolute;
+	top: 187px;
+	right: 320px;
+}
+
+.holder .animacion{
+	position: relative;
+	top: 70px;
+	left: 150px;
+	
+}
+
+
+
+.jMyCarousel ul li{
+	border:1px solid #fff;
+	line-height:0px;
+}
+
+.jMyCarousel ul li a{ /* in case of link */
+	display:block;
+	border:0px;
+}
+
+.jMyCarousel ul li a img{
+	display:block;
+	border:0px;
+}
