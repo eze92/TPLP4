@@ -66,17 +66,17 @@
              <li><a href="provincias.html">Provincias Argentinas </a></li>
              <li><a href="#">Continentes</a>
             	<ul>
-             		<li><a href="america.html">América</a></li>
-             		<li><a href="europa.html">Europa</a></li>
-             		<li><a href="asia.html">Asia</a></li>
+             		<li><a href="vistas/america.html">América</a></li>
+             		<li><a href="vistas/europa.html">Europa</a></li>
+             		<li><a href="vistas/asia.html">Asia</a></li>
              	</ul>
             </ul>
         </li>
         </li>
 				<li><a href="servicios.html" title="">Servicios</a></li>
 				<li><a href="pago.html" title="">Formas de Pago</a></li>
-				<li><a href="agenda.html" title=""> Agenda </a><li>
-				<li><a href="contacto.html" title="">Contacto</a></li>
+				<li><a href="contacto.html" title=""> Contacto </a><li>
+				
 
 
 			</ul>
