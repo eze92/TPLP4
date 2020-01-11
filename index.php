@@ -59,27 +59,25 @@
 		<div class="holder ">
 			
 	
-			<ul>
+		 <ul>
 				<li><a href="index.php" title="">Home</a></li>
 				<li><a href="#">¿Donde viajo?</a>
-         <ul>
-             <li><a href="provincias.html">Provincias Argentinas </a></li>
-             <li><a href="#">Continentes</a>
-            	<ul>
-             		<li><a href="vistas/america.html">América</a></li>
-             		<li><a href="vistas/europa.html">Europa</a></li>
-             		<li><a href="vistas/asia.html">Asia</a></li>
-             	</ul>
-            </ul>
+             	<ul>
+             		<li><a href="provincias.html">Provincias Argentinas </a></li>
+             		<li><a href="#">Continentes</a>
+            			<ul>
+             				<li><a href="vistas/america.html">América</a></li>
+             				<li><a href="vistas/europa.html">Europa</a></li>
+             				<li><a href="vistas/asia.html">Asia</a></li>
+             			</ul>
+        		</ul>
         </li>
         </li>
 				<li><a href="servicios.html" title="">Servicios</a></li>
-				<li><a href="pago.html" title="">Formas de Pago</a></li>
-				<li><a href="contacto.html" title=""> Contacto </a><li>
-				
-
-
-			</ul>
+				<li><a href="pago.html" title="">Formas de Pago</a></li>				
+			    <li><a href="agenda.php" title=""> Agenda </a><li>
+			    <li><a href="contacto.html" title=""> Contacto </a><li>			
+		 </ul>
 		</div>
 
 	</nav>
