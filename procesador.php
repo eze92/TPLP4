@@ -24,7 +24,7 @@
  		$contenido .="<br>Telefono: " . $telefono ."\r\n"; 
  		$contenido .="<br>Mensaje: " . $mensaje;
 
-
+		
  	// 	$remitente_usuario="From: sitio web <ezequiel.ledesma026@gmail.com>";
  	//	$asunto_usuario="Aviso de recibo de consulta";
  	//	$contenido_usuario="Enviaste el siguiente mensaje: " . $mensaje . "\r\n";
@@ -71,6 +71,7 @@
 		//Recipients
 			$mail->setFrom($email, $nombre);                          // desde donde se va enviar 
 			$mail->addAddress('ezequiel.ledesma026@gmail.com');      // Add a recipient   a donde se va enviar
+			$mail->addAddress($email); 
 		// Content
 			$mail->isHTML(true);                                  // Set email format to HTML
 			$mail->Subject =  $asunto;
