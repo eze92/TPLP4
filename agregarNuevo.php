@@ -1,3 +1,6 @@
+<?php
+  include "conect.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -68,36 +71,25 @@
 		<h2>Agenda del viajero</h2>
 
 		<div class="columna left">
-			
+			<div id="contenido">
+  			<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+  		<span> <h1>Agregue una nueva anecdota a su agenda</h1> </span>
+  		<br>
+	  <form action="nuevo_prod2.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+  			<label>Numero: </label>
+  			<input type="text" id="id_producto" name="id_producto"><br>
+  		
+  			<label>Usuario: </label>
+  			<input type="text" id="producto" name="producto" ><br>
+  		
+  			<label>Anecdota: </label>
+  			<textarea style="border-radius: 10px;" rows="3" cols="50" name="descripcion" ></textarea><br>
+  		
+  			<br>
+  			<button type="submit" class="btn btn-success">Guardar</button>
+     </form>
+  	</div>
 
-			<p>Ingrese la anecdota que desea guardar. Tiene disponible la opcion de borrar y eliminar en el caso de estar logeado en la pagina</p>
-
-			<table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  			<thead>
-  					<th>Anecdota</th>
-  					<th> <a href="agregarNuevo.php"> <button type='button' class='btn btn-info'>Nuevo</button> </a> </th>
-  					<th> <a href=""> <button type='button' class='btn btn-info'>Modificar</button> </a> </th>
-           			<th> <a href=""> <button type='button' class='btn btn-info'> Eliminar</button> </a> </th>
-
-      <?php
-        include "conect.php";
-        $sentecia="SELECT * FROM agenda";
-        $resultado= $conexion->query($sentecia) or die (mysqli_error($conexion));
-        while($fila=$resultado->fetch_assoc()) //obtiene datos de la variable fila
-        {
-          echo "<tr>";
-            echo "<td>"; echo $fila['nro_trans']; echo "</td>";
-            echo "<td>"; echo $fila['anecdota']; echo "</td>";
-            echo "<td>"; echo $fila['imagen']; echo "</td>";
-            echo "<td>"; echo $fila['usuario']; echo "</td>";
-          echo "</tr>";
-        }
-      ?>
-
-
-  			</thead>
-
-			</table>
 		</div>
 		
 	</section>
