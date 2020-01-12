@@ -85,6 +85,8 @@
 
 
 	<section class="holder">
+	    <h2>Agenda del viajero</h2>
+
 		<div class="columna left">
 			<div id="contenido">
 				<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
