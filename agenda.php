@@ -90,7 +90,7 @@
             echo "<td>"; echo $fila['imagen']; echo "</td>";
             echo "<td>"; echo $fila['usuario']; echo "</td>";
             echo "<td><a href='modificar.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
-            echo "<th> <a href='#'> <button type='button' class='btn btn-info'> Eliminar</button> </a> </th>";
+            echo "<td><a href='eliminarAnecdota.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-danger'>Eliminar</button> </a></td>";
 
           echo "</tr>";
         }
