@@ -88,8 +88,11 @@
 		<div class="columna left">
 			<div id="contenido">
 				<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+
   					<h1>Modificar Anecdota</h1> 
   					<br>
+  	<form action="modificarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+  	   <input type="hidden" name="nro_trans"  value="<?php echo $_GET['nro_trans']?>">
   					<label>Numero: </label>
   					<input type="text" id="nro_trans" name="nro_trans" value="<?php echo $consulta[0] ?>" ><br>
   		

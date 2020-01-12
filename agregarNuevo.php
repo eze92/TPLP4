@@ -73,7 +73,7 @@
 		<div class="columna left">
 			<div id="contenido">
   			<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  		<span> <h1>Agregue una nueva anecdota a su agenda</h1> </span>
+  		 <h1>Agregue una nueva anecdota a su agenda</h1> 
   		<br>
 	  <form action="agregarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
   			<label>Numero: </label>

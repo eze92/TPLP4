@@ -84,6 +84,7 @@
         $resultado= $conexion->query($sentecia) or die (mysqli_error($conexion));
         while($fila=$resultado->fetch_assoc()) //obtiene datos de la variable fila
         {
+        	//muestra los datos por pantalla
           echo "<tr>";
             echo "<td>"; echo $fila['nro_trans']; echo "</td>";
             echo "<td>"; echo $fila['anecdota']; echo "</td>";
