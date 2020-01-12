@@ -1,3 +1,6 @@
+<?php
+  include "conect.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,40 +68,28 @@
 
 
 	<section class="holder">
-		<h2>Agenda del viajero</h2>
-
 		<div class="columna left">
-			
-
-			<p>Ingrese la anecdota que desea guardar. Tiene disponible la opcion de borrar y eliminar en el caso de estar logeado en la pagina</p>
-
-			<table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
-  			<thead>
-  					<th>Anecdota</th>
-  					<th> <a href="agregarNuevo.php"> <button type='button' class='btn btn-info'>Nuevo</button> </a> </th>
-           			<th> <a href=""> <button type='button' class='btn btn-info'> Eliminar</button> </a> </th>
-
-      <?php
-        include "conect.php";
-        $sentecia="SELECT * FROM agenda";
-        $resultado= $conexion->query($sentecia) or die (mysqli_error($conexion));
-        while($fila=$resultado->fetch_assoc()) //obtiene datos de la variable fila
-        {
-          echo "<tr>";
-            echo "<td>"; echo $fila['nro_trans']; echo "</td>";
-            echo "<td>"; echo $fila['anecdota']; echo "</td>";
-            echo "<td>"; echo $fila['imagen']; echo "</td>";
-            echo "<td>"; echo $fila['usuario']; echo "</td>";
-            echo "<td><a href='modificar.php'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
-
-          echo "</tr>";
-        }
-      ?>
+			<div id="contenido">
+				<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+  					<h1>Modificar Anecdota</h1> 
+  					<br>
+  					<label>Numero: </label>
+  					<input type="text" id="nro_trans" name="nro_trans" value="" ><br>
+  		
+  					<label>Usuario: </label>
+  					<input type="text" id="usuario" name="usuario" value=""><br>
+  		
+  					<label>Anecdota: </label>
+  					<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota">  </textarea><br>
+  		
+  					<br>
+  					<button type="submit" class="btn btn-success">Guardar</button>
+     </form>
 
 
-  			</thead>
+  		
+  			</div>
 
-			</table>
 		</div>
 		
 	</section>
