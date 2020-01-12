@@ -1,7 +1,7 @@
 <?php
 
 	
-	NuevaAnecdota($_POST['nro_trans'], $_POST['usuario'], $_POST['anecdota']);
+	ModificarAnecdota($_POST['nro_trans'], $_POST['usuario'], $_POST['anecdota']);
 	
 	function ModificarAnecdota($nro_trans, $usu, $anecd)
 	{
