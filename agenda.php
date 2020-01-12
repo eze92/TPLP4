@@ -89,7 +89,7 @@
             echo "<td>"; echo $fila['anecdota']; echo "</td>";
             echo "<td>"; echo $fila['imagen']; echo "</td>";
             echo "<td>"; echo $fila['usuario']; echo "</td>";
-            echo "<td><a href='modificar.php'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
+            echo "<td><a href='modificar.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
 
           echo "</tr>";
         }

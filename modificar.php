@@ -1,6 +1,23 @@
 <?php
-  include "conect.php";
+  
+  $consulta=ConsultarAnecdota($_GET['nro_trans']);
+
+  function ConsultarAnecdota( $nro_trans )
+  {
+   include "conect.php";
+   $sentencia="SELECT * FROM agenda WHERE nro_trans='".$nro_trans."' ";
+   $resultado= $conexion->query($sentencia) or die ("Error al consultar datos de la agenda".mysqli_error($conexion)); 
+   $fila=$resultado->fetch_assoc();
+
+   return [
+    $fila['nro_trans'],
+    $fila['usuario'],
+    $fila['anecdota']
+   ];
+  }
+
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -74,13 +91,13 @@
   					<h1>Modificar Anecdota</h1> 
   					<br>
   					<label>Numero: </label>
-  					<input type="text" id="nro_trans" name="nro_trans" value="" ><br>
+  					<input type="text" id="nro_trans" name="nro_trans" value="<?php echo $consulta[0] ?>" ><br>
   		
   					<label>Usuario: </label>
-  					<input type="text" id="usuario" name="usuario" value=""><br>
+  					<input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>"><br>
   		
   					<label>Anecdota: </label>
-  					<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota">  </textarea><br>
+  					<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota"><?php echo $consulta[2] ?>  </textarea><br>
   		
   					<br>
   					<button type="submit" class="btn btn-success">Guardar</button>
