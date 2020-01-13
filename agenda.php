@@ -90,12 +90,24 @@
             echo "<td>"; echo $fila['imagen']; echo "</td>";
             echo "<td>"; echo $fila['usuario']; echo "</td>";
             echo "<td><a href='modificar.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
-            echo "<td><a href='eliminarAnecdota.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-danger'>Eliminar</button> </a></td>";
+            echo "<td><a href='eliminarAnecdota.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-danger' onclick='return ConfirmDelete()'>Eliminar</button> </a></td>";
 
           echo "</tr>";
         }
       ?>
 
+    <script type="text/javascript">
+	function ConfirmDelete(){
+		var respuesta = confirm("Estas seguro que deseas la anecdota ?" );
+
+		if(respuesta == true){
+			return true;
+		}
+		else{
+		}
+			return false;
+	}
+	</script>	
 
   			</thead>
 
