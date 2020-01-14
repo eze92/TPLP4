@@ -74,7 +74,10 @@
 
 			<table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   			<thead>
-  					<th>Anecdota</th>
+  					<th>Nro Anecdota</th>
+  					<th>Usuario</th>
+  					<th>Descripcion</th>
+  					<th>Imagen</th>
   					<th> <a href="agregarNuevo.php"> <button type='button' class='btn btn-info'>Nuevo</button> </a> </th>
 
       <?php
@@ -86,9 +89,10 @@
         	//muestra los datos por pantalla
           echo "<tr>";
             echo "<td>"; echo $fila['nro_trans']; echo "</td>";
-            echo "<td>"; echo $fila['anecdota']; echo "</td>";
-            echo "<td>"; echo $fila['imagen']; echo "</td>";
             echo "<td>"; echo $fila['usuario']; echo "</td>";
+            echo "<td>"; echo $fila['anecdota']; echo "</td>";
+          //  echo "<td>"; echo $fila['imagen']; echo "</td>";
+            echo "<td>"; echo "<img src='".$fila['imagen']."' width='300' >"; echo "</td>";
             echo "<td><a href='modificar.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
             echo "<td><a href='eliminarAnecdota.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-danger' onclick='return ConfirmDelete()'>Eliminar</button> </a></td>";
 

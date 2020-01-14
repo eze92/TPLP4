@@ -75,7 +75,7 @@
   			<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   		 <h1>Agregue una nueva anecdota a su agenda</h1> 
   		<br>
-	  <form action="agregarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
+	  <form action="agregarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
   			<label>Numero: </label>
   			<input type="text" id="nro_trans" name="nro_trans"><br>
   		
@@ -84,6 +84,9 @@
   		
   			<label>Anecdota: </label>
   			<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" ></textarea><br>
+
+  			<label>Imagen: </label>
+  		    <input type="file" name="imagen" id="imagen">
   		
   			<br>
   			<button type="submit" class="btn btn-success">Guardar</button>
