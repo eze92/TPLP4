@@ -1,6 +1,5 @@
 <?php
 
-		//include("conect.php");
 
 
 		$nombre=$_POST['nombre'];
@@ -8,13 +7,6 @@
 		$email=$_POST['email'];
 		$telefono=$_POST['telefono'];
 		$mensaje=$_POST['mensaje'];
-		
-		//$resultado = mysql_query("INSERT INTO consulta VALUES(NULL,'$nombre','$apellido','$email','$telefono','$mensaje')",$conexion);
-
-		
-	//	$remitente="From: $nombre <$email>";
-
-	//	$destino='ezequiel.ledesma026@gmail.com';
 
 		$asunto= $nombre . "\t" . "Envio la siguiente consulta a traves de la web ";
 
@@ -23,25 +15,7 @@
  		$contenido .="<br>E-Mail: " . $email ."\r\n";
  		$contenido .="<br>Telefono: " . $telefono ."\r\n"; 
  		$contenido .="<br>Mensaje: " . $mensaje;
-
-		
- 	// 	$remitente_usuario="From: sitio web <ezequiel.ledesma026@gmail.com>";
- 	//	$asunto_usuario="Aviso de recibo de consulta";
- 	//	$contenido_usuario="Enviaste el siguiente mensaje: " . $mensaje . "\r\n";
- 	//	$contenido_usuario ="A la brevedad nos comunicaremos. Gracias por elegirnos";
-
-
- 	//	mail($destino,$asunto,$contenido,$remitente);	
- 	//	mail($email,$asunto_usuario,$contenido_usuario,$remitente_usuario);
-
- 	//	echo "Los datos se enviaron correctamente."; 
-		
-		
 	   
-	    
-		
-		// nueva parte empieza 
-		
 		use PHPMailer\PHPMailer\PHPMailer;
 		use PHPMailer\PHPMailer\Exception;
 
