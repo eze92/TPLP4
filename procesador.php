@@ -8,6 +8,7 @@
 		$telefono=$_POST['telefono'];
 		$mensaje=$_POST['mensaje'];
 
+
 		$asunto= $nombre . "\t" . "Envio la siguiente consulta a traves de la web ";
 
 		$contenido  ="Nombre: " . $nombre . "\r\n";
@@ -23,13 +24,12 @@
 		require 'PHPMailer/PHPMailer.php';
 		require 'PHPMailer/SMTP.php';
 		
-		/*// Valores enviados desde el formulario
-		if ( !isset($_POST["nombre"]) || !isset($_POST["email"]) || !isset($_POST["telefono"])   || !isset($_POST["mensaje"]) ) {
-		die ("Es necesario completar todos los datos del formulario");
-		}
-*/
+		
 		// Load Composer's autoloader
 		//require 'vendor/autoload.php';
+
+        if((include 'validadorFormulario.php' ) ==TRUE){
+
 		$mail = new PHPMailer(true);
 		try {
 			//Server settings
@@ -38,7 +38,7 @@
 			$mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through seteo servidor de correo
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
 			$mail->Username   = 'ezequiel.ledesma026@gmail.com';                     // SMTP username
-			$mail->Password   = 'gdragon992';                               // SMTP password
+			$mail->Password   = 'gdragon3392';                               // SMTP password
 			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
 			$mail->Port       = 587;                                    // TCP port to connect to
 
@@ -54,9 +54,12 @@
 			$mail->send();
 			//echo 'El mensaje se envio correctamente';
 			header("Location:index.php");
-		} catch (Exception $e) {
-			echo "Se produjo un error al enviar el mensaje: {$mail->ErrorInfo}";
-		
+		}
+		 catch (Exception $e) {
+			//echo "Se produjo un error al enviar el mensaje: {$mail->ErrorInfo}";
+	        header("Location:contacto.html");
+
+		  }
 	    }
 	?>
 
