@@ -9,6 +9,13 @@
 	  	echo"<p> No debe ingresar numeros  </p>";
 	     } 
 	 }
+	 if(empty($apellido)){
+		echo"<p> Agrega tu apellido </p>";
+	} else { 
+		if (is_numeric($apellido))	{
+	  	echo"<p> No debe ingresar numeros  </p>";
+	     } 
+	 }
 	      
     if(empty($email)){
 		echo"<p> Agregue un correo  </p>";
