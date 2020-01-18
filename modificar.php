@@ -76,6 +76,7 @@
 				<li><a href="servicios.html" title="">Servicios</a></li>
 				<li><a href="pago.html" title="">Formas de Pago</a></li>				
 			    <li><a href="agenda.html" title=""> Agenda </a><li>
+                <li><a href="agenda.php" title=""> Agenda </a><li>
 			    <li><a href="contacto.html" title=""> Contacto </a><li>			
 		 </ul>
 		</div>
