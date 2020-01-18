@@ -5,7 +5,7 @@
 	if(empty($nombre)){
 		echo"<p> Agrega tu nombre </p>";
 	} else { 
-		if (is_numeric($nonbre))	{
+		if (is_numeric($nombre))	{
 	  	echo"<p> No debe ingresar numeros  </p>";
 	     } 
 	 }

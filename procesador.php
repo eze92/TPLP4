@@ -52,12 +52,13 @@
 			$mail->Body    =  $contenido;
 			$mail->CharSet = 'UTF-8';
 			$mail->send();
-			//echo 'El mensaje se envio correctamente';
-			header("Location:index.php");
+			//header("Location:index.php");
+			echo '<script>  alert ("El mensaje se envio correctamente");window.location.href="index.php"; </script> ';
 		}
 		 catch (Exception $e) {
 			//echo "Se produjo un error al enviar el mensaje: {$mail->ErrorInfo}";
-	        header("Location:contacto.html");
+	        //header("Location:contacto.html");
+		 	echo '<script>  alert ("El mensaje no pudo ser enviado por errores en la carga de datos");window.location.href="contacto.html"; </script> ';
 
 		  }
 	    }
