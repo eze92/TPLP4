@@ -19,7 +19,7 @@
 	 }
 	      
     if(empty($email)){
-		echo"<p> Agregue un correo  </p>";
+		return false;
 	} else {
 	   if(!filter_var($email,FILTER_VALIDATE_EMAIL))	{
 	  	return false;
