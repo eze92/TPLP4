@@ -1,19 +1,20 @@
 <?php
 
+    $patron_texto = "/^[a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙ\s]+$/";
 
     if(isset($_POST['submit'])){
 
 	if(empty($nombre) ){
 		return false;
 	} else { 
-		if (is_numeric($nombre))	{
+		if (!(preg_match($patron_texto, $nombre)))	{
 	    return false;
 	   } 
 	 }
 	if(empty($apellido) ){
 		return false;
 	} else { 
-		if (is_numeric($apellido))	{
+		if (!(preg_match($patron_texto, $apellido)))	{
 	    return false;
 	   } 
 	 }
