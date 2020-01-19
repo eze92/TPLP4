@@ -28,7 +28,7 @@
 		// Load Composer's autoloader
 		//require 'vendor/autoload.php';
 
-        if((include 'validadorFormulario.php' ) ==TRUE){
+        if((include 'validadorFormulario.php' ) == TRUE){
 
 		$mail = new PHPMailer(true);
 		try {
@@ -55,9 +55,11 @@
 			echo '<script>  alert ("El mensaje se envio correctamente");window.location.href="index.php"; </script> ';
 		}
 		 catch (Exception $e) {
-		 	echo '<script>  alert ("El mensaje no pudo ser enviado por errores en la carga de datos");window.location.href="contacto.html"; </script> ';
-
+			echo "Se produjo un error al enviar el mensaje: {$mail->ErrorInfo}";
 		  }
+		 }else {
+		  	echo '<script>  alert ("El mensaje no pudo ser enviado por errores en la carga de datos");window.location.href="contacto.html"; </script> ';
 	    }
+	
 	?>
 
