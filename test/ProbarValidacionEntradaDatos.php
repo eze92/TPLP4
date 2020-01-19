@@ -5,10 +5,11 @@
  */
 class ProbarEntradaNombreApellidoTest extends PHPUnit\Framework\TestCase
 {
-
+	$patron_texto = "/^[a-zA-ZáéíóúÁÉÍÓÚäëïöüÄËÏÖÜàèìòùÀÈÌÒÙ\s]+$/";
+	
     private function entrada(string $input)
     {
-        if (empty($input)) {
+        if (!(preg_match($patron_texto, $input))) {
             return false;
         } else {
             if (is_numeric($input)) {
