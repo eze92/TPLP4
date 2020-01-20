@@ -97,14 +97,14 @@
   	<form action="modificarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
   	   <input type="hidden" name="nro_trans"  value="<?php echo $_GET['nro_trans']?>">
   					<label>Numero: </label>
-  					<input type="text" id="nro_trans" name="nro_trans" value="<?php echo $consulta[0] ?>" ><br>
+  					<input type="text" id="nro_trans" name="nro_trans" value="<?php echo $consulta[0] ?>" required ><br>
   		
   					<label>Usuario: </label>
-  					<input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>"><br>
+  					<input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>" required> <br>
   		
   					<label>Anecdota: </label>
-  					<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota"><?php echo $consulta[2] ?>  </textarea><br>
-  				    <input type="file" name="file1" id="file1">
+  					<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" required ><?php echo $consulta[2] ?>  </textarea><br>
+  				    <input type="file" name="file1" id="file1" required>
   					<br>
   					<button type="submit" class="btn btn-success">Guardar</button>
      </form>

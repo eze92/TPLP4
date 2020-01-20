@@ -77,16 +77,16 @@
   		<br>
 	  <form action="agregarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
   			<label>Numero: </label>
-  			<input type="text" id="nro_trans" name="nro_trans"><br>
+  			<input type="text" id="nro_trans" name="nro_trans" required><br>
   		
   			<label>Usuario: </label>
-  			<input type="text" id="usuario" name="usuario" ><br>
+  			<input type="text" id="usuario" name="usuario" required ><br>
   		
   			<label>Anecdota: </label>
-  			<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" ></textarea><br>
+  			<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" required ></textarea><br>
 
   			<label>Imagen: </label>
-  		    <input type="file" name="imagen" id="imagen">
+  		    <input type="file" name="imagen" id="imagen" required>
   		
   			<br>
   			<button type="submit" class="btn btn-success">Guardar</button>
