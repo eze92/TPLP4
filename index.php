@@ -63,7 +63,7 @@
 				<li><a href="index.php" title="">Home</a></li>
 				<li><a href="#">¿Donde viajo?</a>
              	<ul>
-             		<li><a href="provincias.html">Provincias Argentinas </a></li>
+             		<li><a href="modelo/provincias.html">Provincias Argentinas </a></li>
              		<li><a href="#">Continentes</a>
             			<ul>
              				<li><a href="vistas/america.html">América</a></li>
