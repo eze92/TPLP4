@@ -5,8 +5,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Turismo</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/normalize.css">
 </head>
 <body>
 	<header>
@@ -15,7 +15,7 @@
 			
 
 		<section class ="logo">	
-		<img src="galeria/logo.jpg" alt="logo">
+		<img src="../galeria/logo.jpg" alt="logo">
 		</section>
 
 		<h1>Turismo Nacional e Internacional  </h1>
@@ -40,15 +40,15 @@
 			
 	
 		 <ul>
-				<li><a href="index.php" title="">Home</a></li>
+				<li><a href="../index.php" title="">Home</a></li>
 				<li><a href="#">¿Donde viajo?</a>
              	<ul>
              		<li><a href="provincias.html">Provincias Argentinas </a></li>
              		<li><a href="#">Continentes</a>
             			<ul>
-             				<li><a href="vistas/america.html">América</a></li>
-             				<li><a href="vistas/europa.html">Europa</a></li>
-             				<li><a href="vistas/asia.html">Asia</a></li>
+             				<li><a href="../vistas/america.html">América</a></li>
+             				<li><a href="../vistas/europa.html">Europa</a></li>
+             				<li><a href="../vistas/asia.html">Asia</a></li>
              			</ul>
         		</ul>
         </li>
@@ -78,10 +78,10 @@
   					<th>Usuario</th>
   					<th>Descripcion</th>
   					<th>Imagen</th>
-  					<th> <a href="agregarNuevo.php"> <button type='button' class='btn btn-info'>Nuevo</button> </a> </th>
+  					<th> <a href="../controladores/agregarNuevo.php"> <button type='button' class='btn btn-info'>Nuevo</button> </a> </th>
 
       <?php
-        include "conect.php";
+        include "../controladores/conect.php";
         $sentecia="SELECT * FROM agenda";
         $resultado= $conexion->query($sentecia) or die (mysqli_error($conexion));
         while($fila=$resultado->fetch_assoc()) //obtiene datos de la variable fila
@@ -93,8 +93,8 @@
             echo "<td>"; echo $fila['anecdota']; echo "</td>";
           //  echo "<td>"; echo $fila['imagen']; echo "</td>";
             echo "<td>"; echo "<img src='".$fila['imagen']."' width='300' >"; echo "</td>";
-            echo "<td><a href='modificar.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
-            echo "<td><a href='eliminarAnecdota.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-danger' onclick='return ConfirmDelete()'>Eliminar</button> </a></td>";
+            echo "<td><a href='../controladores/modificar.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
+            echo "<td><a href='../controladores/eliminarAnecdota.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-danger' onclick='return ConfirmDelete()'>Eliminar</button> </a></td>";
 
           echo "</tr>";
         }
