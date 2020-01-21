@@ -25,8 +25,8 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Turismo</title>
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="css/estilos.css">
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="../css/estilos.css">
+	<link rel="stylesheet" href="../css/normalize.css">
 </head>
 <body>
 	<header>
@@ -35,7 +35,7 @@
 			
 
 		<section class ="logo">	
-		<img src="galeria/logo.jpg" alt="logo">
+		<img src="../galeria/logo.jpg" alt="logo">
 		</section>
 
 		<h1>Turismo Nacional e Internacional  </h1>
@@ -66,17 +66,17 @@
              		<li><a href="provincias.html">Provincias Argentinas </a></li>
              		<li><a href="#">Continentes</a>
             			<ul>
-             				<li><a href="vistas/america.html">América</a></li>
-             				<li><a href="vistas/europa.html">Europa</a></li>
-             				<li><a href="vistas/asia.html">Asia</a></li>
+             				<li><a href="../vistas/america.html">América</a></li>
+             				<li><a href="../vistas/europa.html">Europa</a></li>
+             				<li><a href="../vistas/asia.html">Asia</a></li>
              			</ul>
         		</ul>
         </li>
         </li>
-				<li><a href="servicios.html" title="">Servicios</a></li>
-				<li><a href="pago.html" title="">Formas de Pago</a></li>				
-                <li><a href="agenda.php" title=""> Agenda </a><li>
-			    <li><a href="contacto.html" title=""> Contacto </a><li>			
+				<li><a href="../modelo/servicios.html" title="">Servicios</a></li>
+				<li><a href="../modelo/pago.html" title="">Formas de Pago</a></li>				
+                <li><a href="../modelo/agenda.php" title=""> Agenda </a><li>
+			    <li><a href="../modelo/contacto.html" title=""> Contacto </a><li>			
 		 </ul>
 		</div>
 

@@ -12,5 +12,5 @@
 
 <script type="text/javascript">
 	alert("Anecdota Eliminada!!");
-	window.location.href='agenda.php';
+	window.location.href='../modelo/agenda.php';
 </script>

@@ -8,7 +8,7 @@
 		include 'conect.php';
 
 		$nom_archivo=$_FILES['imagen']['name']; // Para conocer el nombre del archivo
-		$ruta = "imagenes/" . $nom_archivo;  // La ruta del archivo contiene el nuevo nombre y el tipo de extension
+		$ruta = "../imagenes/" . $nom_archivo;  // La ruta del archivo contiene el nuevo nombre y el tipo de extension
 		$archivo = $_FILES['imagen']['tmp_name']; //el arhivo a subir
 		$subir=move_uploaded_file($archivo, $ruta); //se sube el archivo
 
@@ -19,5 +19,5 @@
 
 <script type="text/javascript">
 	alert("Anecdota ingresada correctamente!!");
-	window.location.href='agenda.php';
+	window.location.href='../modelo/agenda.php';
 </script>
