@@ -57,7 +57,7 @@ nav ul {
 /*estilo de los menus */
 nav ul li{
 	display: inline-block;
-	width: 13%;
+	width: 15%;
 	border-right: 2px solid #ccc;
 }
 

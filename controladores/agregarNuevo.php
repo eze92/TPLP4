@@ -58,8 +58,8 @@
         </li>
 				<li><a href="../modelo/servicios.html" title="">Servicios</a></li>
 				<li><a href="../modelo/pago.html" title="">Formas de Pago</a></li>				
-			    <li><a href="../modelo/agenda.php" title=""> Agenda </a><li>
-			    <li><a href="../modelo/contacto.html" title=""> Contacto </a><li>			
+			    <li><a href="../modelo/agenda.php" title=""> Agenda </a></li>
+			    <li><a href="../modelo/contacto.html" title=""> Contacto </a></li>			
 		 </ul>
 		</div>
 
