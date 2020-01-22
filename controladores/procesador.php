@@ -20,9 +20,9 @@
 		use PHPMailer\PHPMailer\PHPMailer;
 		use PHPMailer\PHPMailer\Exception;
 
-		require 'PHPMailer/Exception.php';
-		require 'PHPMailer/PHPMailer.php';
-		require 'PHPMailer/SMTP.php';
+		require '../PHPMailer/Exception.php';
+		require '../PHPMailer/PHPMailer.php';
+		require '../PHPMailer/SMTP.php';
 		
 		
 		// Load Composer's autoloader
@@ -52,13 +52,13 @@
 			$mail->Body    =  $contenido;
 			$mail->CharSet = 'UTF-8';
 			$mail->send();
-			echo '<script>  alert ("El mensaje se envio correctamente");window.location.href="index.php"; </script> ';
+			echo '<script>  alert ("El mensaje se envio correctamente");window.location.href="../index.php"; </script> ';
 		}
 		 catch (Exception $e) {
 			echo "Se produjo un error al enviar el mensaje: {$mail->ErrorInfo}";
 		  }
 		 }else {
-		  	echo '<script>  alert ("El mensaje no pudo ser enviado por errores en la carga de datos");window.location.href="contacto.html"; </script> ';
+		  	echo '<script>  alert ("El mensaje no pudo ser enviado por errores en la carga de datos");window.location.href="../modelo/contacto.html"; </script> ';
 	    }
 	
 	?>
