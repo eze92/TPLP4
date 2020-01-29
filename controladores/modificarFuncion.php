@@ -19,8 +19,8 @@
 		$archivo = $_FILES['file1']['tmp_name']; //el arhivo a subir
 		$subir=move_uploaded_file($archivo, $ruta); //se sube el archivo
 	    include 'conect.php';
-		//echo 
-		echo $sentencia_img="UPDATE agenda SET imagen='$ruta' WHERE nro_trans='".$_POST['nro_trans']."' ";
+		
+		$sentencia_img="UPDATE agenda SET imagen='$ruta' WHERE nro_trans='".$_POST['nro_trans']."' ";
 		$conexion->query($sentencia_img) or die ("Error al actualizar datos".mysqli_error($conexion));
 		
 	}
