@@ -102,7 +102,7 @@
 
     <script type="text/javascript">
 	function ConfirmDelete(){
-		var respuesta = confirm("Estas seguro que deseas la anecdota ?" );
+		var respuesta = confirm("¿Estas seguro que deseas eliminar la anecdota ?" );
 
 		if(respuesta == true){
 			return true;
