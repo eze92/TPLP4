@@ -4,7 +4,7 @@ namespace PharIo\Manifest;
 
 use DOMDocument;
 
-class BundlesElementTest extends \PHPUnit_Framework_TestCase {
+class BundlesElementTest extends \PHPUnit\Framework\TestCase {
     /**
      * @var DOMDocument
      */
@@ -15,7 +15,7 @@ class BundlesElementTest extends \PHPUnit_Framework_TestCase {
      */
     private $bundles;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->dom = new DOMDocument();
         $this->dom->loadXML('<?xml version="1.0" ?><bundles xmlns="https://phar.io/xml/manifest/1.0" />');
         $this->bundles = new BundlesElement($this->dom->documentElement);

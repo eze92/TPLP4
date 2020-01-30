@@ -4,7 +4,7 @@ namespace PharIo\Manifest;
 
 use DOMDocument;
 
-class RequiresElementTest extends \PHPUnit_Framework_TestCase {
+class RequiresElementTest extends \PHPUnit\Framework\TestCase {
     /**
      * @var DOMDocument
      */
@@ -15,7 +15,7 @@ class RequiresElementTest extends \PHPUnit_Framework_TestCase {
      */
     private $requires;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->dom = new DOMDocument();
         $this->dom->loadXML('<?xml version="1.0" ?><requires xmlns="https://phar.io/xml/manifest/1.0" />');
         $this->requires = new RequiresElement($this->dom->documentElement);

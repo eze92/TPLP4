@@ -4,7 +4,7 @@ namespace PharIo\Manifest;
 
 use DOMDocument;
 
-class CopyrightElementTest extends \PHPUnit_Framework_TestCase {
+class CopyrightElementTest extends \PHPUnit\Framework\TestCase {
     /**
      * @var DOMDocument
      */
@@ -15,7 +15,7 @@ class CopyrightElementTest extends \PHPUnit_Framework_TestCase {
      */
     private $copyright;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->dom = new DOMDocument();
         $this->dom->loadXML('<?xml version="1.0" ?><copyright xmlns="https://phar.io/xml/manifest/1.0" />');
         $this->copyright = new CopyrightElement($this->dom->documentElement);

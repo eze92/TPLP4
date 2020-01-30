@@ -5,7 +5,7 @@ namespace PharIo\Manifest;
 use DOMDocument;
 use DOMElement;
 
-class ContainsElementTest extends \PHPUnit_Framework_TestCase {
+class ContainsElementTest extends \PHPUnit\Framework\TestCase {
     /**
      * @var DOMElement
      */
@@ -16,7 +16,7 @@ class ContainsElementTest extends \PHPUnit_Framework_TestCase {
      */
     private $contains;
 
-    protected function setUp() {
+    protected function setUp():void {
         $dom = new DOMDocument();
         $dom->loadXML('<?xml version="1.0" ?><php xmlns="https://phar.io/xml/manifest/1.0" name="phpunit/phpunit" version="5.6.5" type="application" />');
         $this->domElement = $dom->documentElement;

@@ -4,7 +4,7 @@ namespace PharIo\Manifest;
 
 use DOMDocument;
 
-class PhpElementTest extends \PHPUnit_Framework_TestCase {
+class PhpElementTest extends \PHPUnit\Framework\TestCase {
     /**
      * @var DOMDocument
      */
@@ -15,7 +15,7 @@ class PhpElementTest extends \PHPUnit_Framework_TestCase {
      */
     private $php;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->dom = new DOMDocument();
         $this->dom->loadXML('<?xml version="1.0" ?><php xmlns="https://phar.io/xml/manifest/1.0" version="^5.6 || ^7.0" />');
         $this->php = new PhpElement($this->dom->documentElement);
