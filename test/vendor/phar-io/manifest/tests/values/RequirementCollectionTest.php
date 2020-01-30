@@ -31,7 +31,7 @@ class RequirementCollectionTest extends TestCase {
      */
     private $item;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->collection = new RequirementCollection;
         $this->item       = new PhpVersionRequirement(new ExactVersionConstraint('7.1.0'));
     }

@@ -23,7 +23,7 @@ class AuthorTest extends TestCase {
      */
     private $author;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->author = new Author('Joe Developer', new Email('user@example.com'));
     }
 

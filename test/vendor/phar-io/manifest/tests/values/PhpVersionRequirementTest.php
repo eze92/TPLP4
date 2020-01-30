@@ -24,7 +24,7 @@ class PhpVersionRequirementTest extends TestCase {
      */
     private $requirement;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->requirement = new PhpVersionRequirement(new ExactVersionConstraint('7.1.0'));
     }
 

@@ -34,7 +34,7 @@ class ExtensionTest extends TestCase {
      */
     private $name;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->name = $this->createMock(ApplicationName::class);
         $this->type = Type::extension($this->name, new AnyVersionConstraint);
     }

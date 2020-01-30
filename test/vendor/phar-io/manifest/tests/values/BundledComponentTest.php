@@ -24,7 +24,7 @@ class BundledComponentTest extends TestCase {
      */
     private $bundledComponent;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->bundledComponent = new BundledComponent('phpunit/php-code-coverage', new Version('4.0.2'));
     }
 

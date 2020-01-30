@@ -22,7 +22,7 @@ class LibraryTest extends TestCase {
      */
     private $type;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->type = Type::library();
     }
 

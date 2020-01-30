@@ -69,7 +69,7 @@ class ManifestTest extends TestCase {
      */
     private $manifest;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->version = new Version('5.6.5');
 
         $this->type = Type::application();

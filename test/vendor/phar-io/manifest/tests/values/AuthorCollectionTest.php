@@ -30,7 +30,7 @@ class AuthorCollectionTest extends TestCase {
      */
     private $item;
 
-    protected function setUp() {
+    protected function setUp():void {
         $this->collection = new AuthorCollection;
         $this->item       = new Author('Joe Developer', new Email('user@example.com'));
     }
