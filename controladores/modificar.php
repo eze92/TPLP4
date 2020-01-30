@@ -94,10 +94,9 @@
   					<h1>Modificar Anecdota</h1> 
   					<br>
   	<form action="modificarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
-  	   <input type="hidden" name="nro_trans"  value="<?php echo $_GET['nro_trans']?>">
-  					
-  		
-  					<label>Usuario: </label>
+  	   <input type="hidden" name="nro_trans"  value="<?php echo $_GET['nro_trans']?>">	
+  	   	
+  					<label>Nombre de Usuario: </label>
   					<input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>" required> <br>
   		
   					<label>Anecdota: </label>
