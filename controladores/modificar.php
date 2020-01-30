@@ -95,8 +95,7 @@
   					<br>
   	<form action="modificarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
   	   <input type="hidden" name="nro_trans"  value="<?php echo $_GET['nro_trans']?>">
-  					<label>Numero: </label>
-  					<input type="text" id="nro_trans" name="nro_trans" value="<?php echo $consulta[0] ?>" required ><br>
+  					
   		
   					<label>Usuario: </label>
   					<input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>" required> <br>

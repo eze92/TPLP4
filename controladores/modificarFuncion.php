@@ -6,7 +6,7 @@
 	function ModificarAnecdota($nro_trans, $usu, $anecd)
 	{
 		include 'conect.php';
-		$sentencia= "UPDATE agenda SET nro_trans='".$nro_trans."', usuario='".$usu."', anecdota='".$anecd."' WHERE nro_trans='".$nro_trans."' ";
+		$sentencia= "UPDATE agenda SET usuario='".$usu."', anecdota='".$anecd."' WHERE nro_trans='".$nro_trans."' ";
 
 		$conexion->query($sentencia) or die ("Error al actualizar los datos".mysqli_error($conexion));
 	}
