@@ -2,10 +2,16 @@
 <phpunit colors="true">
 	<testsuites>
 		<testsuite>
-            <directory>test</directory>
-			<exclude>
-				<directory>/test/vendor</directory>
-			</exclude>
+            <directory>test</directory>	
 		</testsuite>		
 	</testsuites>
+	<filter>
+		<blacklist>
+			<directory>/test/vendor/</directory>
+		</blacklist>
+	</filter>
+
 </phpunit>
+
+
+
