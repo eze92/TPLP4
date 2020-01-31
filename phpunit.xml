@@ -2,12 +2,14 @@
 <phpunit colors="true">
 	<testsuites>
 		<testsuite>
-            <directory>test/</directory>	
+            <directory>test</directory>	
 		</testsuite>		
 	</testsuites>
-	
+	<filter>
+		<whitelist>
+			<directory suffix=".php">../test/vendor/*/tests/*</directory>
+		</whitelist>
+	</filter>
 
 </phpunit>
-
-
 
