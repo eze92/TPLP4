@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true">
-	<testsuite name="unidad">
+	<testsuites name="unidad">
 		<testsuite>
             <directory>/test/unidad</directory>	
 		</testsuite>		
 	</testsuites>
 </phpunit>
+
+
 
