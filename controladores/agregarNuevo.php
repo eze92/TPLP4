@@ -76,9 +76,7 @@
   		 <h1>Agregue una nueva anecdota a su agenda</h1> 
   		<br>
 	  <form action="agregarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
-  			<label>Numero: </label>
-  			<input type="text" id="nro_trans" name="nro_trans" required><br>
-  		
+
   			<label>Usuario: </label>
   			<input type="text" id="usuario" name="usuario" required ><br>
   		
