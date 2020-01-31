@@ -4,13 +4,6 @@
 		<testsuite>
             <directory>test</directory>	
 		</testsuite>		
-
-	<filter>
-		<whitelist>
-			<directory suffix=".php">../test/vendor/*/tests/*</directory>
-		</whitelist>
-	</filter>
-	
 	</testsuites>
 </phpunit>
 
