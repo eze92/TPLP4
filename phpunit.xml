@@ -7,7 +7,7 @@
 	</testsuites>
 	<filter>
 		<blacklist>
-			<directory>/test/vendor/</directory>
+			<directory suffix=".php">../test/vendor/*/tests/*</directory>
 		</blacklist>
 	</filter>
 
