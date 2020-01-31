@@ -14,6 +14,8 @@
 
 		$sentencia= "INSERT INTO agenda (nro_trans, usuario, anecdota,imagen) VALUES ('".$nro_trans."', '".$usu."', '".$anecd."','".$ruta."') ";
 		$conexion->query($sentencia) or die ("Error al ingresar los datos".mysqli_error($conexion));
+		return $result=mysqli_query($conexion,$sentencia);
+
 	}
 ?>
 
