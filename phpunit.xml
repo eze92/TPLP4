@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <phpunit colors="true">
-	<testsuites name="unidad">
+	<testsuites>
 		<testsuite>
-            <directory>test/unidad</directory>	
+            <directory>/test/unidad</directory>	
 		</testsuite>		
 	</testsuites>
 </phpunit>
