@@ -3,6 +3,9 @@
 	<testsuites>
 		<testsuite>
             <directory>test</directory>
-		</testsuite>
+			<exclude>
+				<directory>/test/vendor</directory>
+			</exclude>
+		</testsuite>		
 	</testsuites>
 </phpunit>
