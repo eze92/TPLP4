@@ -101,7 +101,7 @@
   		
   					<label>Anecdota: </label>
   					<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" required ><?php echo $consulta[2] ?>  </textarea><br>
-  				    <input type="file" name="file1" id="file1" required>
+  				    <input type="file" name="imagen" id="imagen" required>
   					<br>
   					<button type="submit" class="btn btn-success">Guardar</button>
      </form>
