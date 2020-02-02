@@ -67,10 +67,10 @@
 	<section class="holder">
 		<h2>Agenda del viajero</h2>
 
-		<div class="columna left">
+		<div class="">
 			
 
-			<p>Ingrese la anecdota que desea guardar. Tiene disponible la opcion de borrar y eliminar en el caso de estar logeado en la pagina</p>
+			<p>Ingrese la anecdota que desea guardar.La imagen a subir debe ser de tipo pgn,jpg,jpeg o gif y cuyo tamaño debe ser menor o igual a 2MB.</p>
 
 			<table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   			<thead>
