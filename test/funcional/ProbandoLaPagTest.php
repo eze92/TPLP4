@@ -14,8 +14,6 @@ class ProbandoLaPagTest extends TestCase
     /**
      * @var string
      */
-    private $baseUrl;
-	
     protected $url = 'https://turismonacionaleinternacional';
 
     /**
@@ -29,37 +27,7 @@ class ProbandoLaPagTest extends TestCase
 
     }
 
-    /**
-     * Method testProbandoLaPag
-     * @test
-     */
-   /* public function testProbandoLaPag()
-    {
-        // open | http://turi/ | 
-        $this->webDriver->get("http://turi/");
-        // click | link=Contacto | 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::linkText("Contacto"))->click();
-        // click | id=nombre | 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("nombre"))->click();
-        // type | id=nombre | Ezequiel
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("nombre"))->sendKeys("Ezequiel");
-        // type | id=apellido | Ledesma
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("apellido"))->sendKeys("Ledesma");
-        // type | id=email | ezequiel.ledesma026@gmail.com
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("email"))->sendKeys("ezequiel.ledesma026@gmail.com");
-        // click | id=telefono | 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("telefono"))->click();
-        // type | id=telefono | 47347866
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("telefono"))->sendKeys("47347866");
-        // click | id=mensaje | 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("mensaje"))->click();
-        // type | id=mensaje | Se prueba escribiendo un mensaje 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("mensaje"))->sendKeys("Se prueba escribiendo un mensaje");
-        // click | name=submit | 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name("submit"))->click();
-    }
-*/
-		public function probandoContenidoEncabezadoDeLaPagina()
+	public function probandoContenidoEncabezadoDeLaPagina()
     {
         $this->webDriver->get($this->url);
         $this->assertStringContainsString('turi', $this->webDriver->getTitle());
