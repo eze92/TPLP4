@@ -56,7 +56,7 @@ class ProbandoIngresarDatosTest extends TestCase
 		
 		$this->webDriver->switchTo()->alert()->dismiss();	
 		
-		$this->assertStringContainsString('Ezequiel',  $this->webDriver->getTitle());
+		$this->assertStringContainsString('Turismo', $this->webDriver->getTitle());
 	
 		}
 		
