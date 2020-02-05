@@ -9,9 +9,9 @@
 	<link rel="stylesheet" href="css/normalize.css">
 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" href="jcarousel.basic.css">
+	<link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
 
-	 <script type="text/javascript" charset="utf-8" src="animacion_edgePreload.js"></script>
+	 <script type="text/javascript" charset="utf-8" src="js/animacion_edgePreload.js"></script>
 
 	
 	 
