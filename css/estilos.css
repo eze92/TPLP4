@@ -555,6 +555,7 @@ h3{
   color: #fff;
   background-color: #5bc0de;
   border-color: #46b8da;
+  padding: 0.1em ;
 }
 .btn-info:focus,
 .btn-info.focus {
@@ -594,11 +595,13 @@ h3{
 }
 .btn-info.disabled:hover,
 .btn-info[disabled]:hover,
+
 /*modificar*/
 .btn-success {
   color: #fff;
   background-color: #5cb85c;
   border-color: #4cae4c;
+  padding: 0.1em ;
 }
 .btn-success:focus,
 .btn-success.focus {
@@ -620,6 +623,9 @@ h3{
   color: #fff;
   background-color: #d9534f;
   border-color: #d43f3a;
+  padding: 0.1em ;
+  
+  
 }
 .btn-danger:focus,
 .btn-danger.focus {
@@ -672,4 +678,24 @@ fieldset[disabled] .btn-danger.focus {
 .btn-danger .badge {
   color: #d9534f;
   background-color: #fff;
+}
+
+/*tabla agenda*/
+.agenda{
+	width: 100%;
+	border: 1px solid #ddd;
+	border-right-width: 0;
+	border-bottom-width: 0;
+	border-spacing: 0;
+	border-collapse: separate; /*BUSCAR QUE ES */
+	border-color: gray;
+
+	
+}
+
+th, td {
+padding: 0.5em 10px;
+border: 1px solid #ddd;
+border-left-width: 0;
+border-top-width: 0;
 }

@@ -69,16 +69,16 @@
 
 		<div class="">
 			
+			<p>Ingrese la anecdota que desea guardar.La imagen a subir debe ser de tipo png,jpg,jpeg o gif y cuyo tamaño debe ser menor o igual a 2MB.</p>
 
-			<p>Ingrese la anecdota que desea guardar.La imagen a subir debe ser de tipo pgn,jpg,jpeg o gif y cuyo tamaño debe ser menor o igual a 2MB.</p>
-
-			<table style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
+			<table class = "agenda" border="2">
   			<thead>
   					<th>Nro Anecdota</th>
   					<th>Usuario</th>
   					<th>Descripcion</th>
   					<th>Imagen</th>
   					<th> <a href="../controladores/agregarNuevo.php"> <button type='button' class='btn btn-info'>Nuevo</button> </a> </th>
+					<th> </th>
 
       <?php
         include "../controladores/conect.php";
@@ -91,7 +91,6 @@
             echo "<td>"; echo $fila['nro_trans']; echo "</td>";
             echo "<td>"; echo $fila['usuario']; echo "</td>";
             echo "<td>"; echo $fila['anecdota']; echo "</td>";
-          //  echo "<td>"; echo $fila['imagen']; echo "</td>";
             echo "<td>"; echo "<img src='".$fila['imagen']."' width='300' >"; echo "</td>";
             echo "<td><a href='../controladores/modificar.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
             echo "<td><a href='../controladores/eliminarAnecdota.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-danger' onclick='return ConfirmDelete()'>Eliminar</button> </a></td>";
