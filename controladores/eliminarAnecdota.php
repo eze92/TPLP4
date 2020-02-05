@@ -8,7 +8,7 @@
 
 		$sen="SELECT imagen FROM agenda where nro_trans='".$nro_trans."' ";
         $resultado= $conexion->query($sen) or die (mysqli_error($conexion));
-        while($fila=$resultado->fetch_assoc()) //obtiene datos de la variable fila
+        while($fila=$resultado->fetch_assoc()) 
         {
         	$espera = unlink("../imagenes/".$fila['imagen']);
         }

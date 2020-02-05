@@ -699,3 +699,28 @@ border: 1px solid #ddd;
 border-left-width: 0;
 border-top-width: 0;
 }
+
+/*agenda nuevo*/
+.formularioagenda textarea{
+	background: #10F5E2;
+	border-radius: 5px;
+	border: 1px solid green;
+	font-size: .8em; /*fuente que va ir dentro de  la caja */
+	padding: .4em .6em;
+	width: 80%;
+	height: 10em;
+	resize:none;
+}
+.formularioagenda label{
+	display: inline-block;
+	vertical-align: top;
+	width: 16%;
+}
+.formularioagenda  #usuario, .formularioagenda textarea{
+	background: #10F5E2;
+	border-radius: 5px;
+	border: 1px solid green;
+	font-size: .8em; /*fuente que va ir dentro de  la caja */
+	padding: .4em .6em;
+	width: 80%;
+}

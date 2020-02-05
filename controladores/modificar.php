@@ -93,14 +93,15 @@
 
   					<h1>Modificar Anecdota</h1> 
   					<br>
-  	<form action="modificarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
+  	<form action="modificarFuncion.php" method="POST" class ="formularioagenda" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
   	   <input type="hidden" name="nro_trans"  value="<?php echo $_GET['nro_trans']?>">	
   	   	
-  					<label>Nombre de Usuario: </label>
+  					<label>Usuario: </label>
   					<input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>" required> <br>
   		
   					<label>Anecdota: </label>
   					<textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" required ><?php echo $consulta[2] ?>  </textarea><br>
+  				   	<label>Imagen: </label>
   				    <input type="file" name="imagen" id="imagen" required>
   					<br>
   					<button type="submit" class="btn btn-success">Guardar</button>

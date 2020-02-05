@@ -75,7 +75,7 @@
   			<div style="margin: auto; width: 800px; border-collapse: separate; border-spacing: 10px 5px;">
   		 <h1>Agregue una nueva anecdota a su agenda</h1> 
   		<br>
-	  <form action="agregarFuncion.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
+	  <form action="agregarFuncion.php" method="POST" class ="formularioagenda" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
 
   			<label>Usuario: </label>
   			<input type="text" id="usuario" name="usuario" required ><br>
