@@ -7,19 +7,12 @@ require_once('vendor/autoload.php');
 
 class subirAnecdotaTest extends TestCase
 {
-    /**
-     * @var WebDriver\Remote\RemoteWebDriver
-     */
+
     private $webDriver;
 
-    /**
-     * @var string
-     */
+
     private $baseUrl;
 
-    /**
-     * init webdriver
-     */
     public function setUp():void
     {
         $desiredCapabilities = WebDriver\Remote\DesiredCapabilities::chrome();
@@ -27,10 +20,7 @@ class subirAnecdotaTest extends TestCase
         $this->webDriver = WebDriver\Remote\RemoteWebDriver::create('http://localhost:4444/wd/hub', $desiredCapabilities);
     }
 
-    /**
-     * Method testUntitledTestCase
-     * @test
-     */
+
     public function subirAnecdota()
     {
       
@@ -89,20 +79,11 @@ class subirAnecdotaTest extends TestCase
         return $nombreArchivo;
     }   
 
-    /**
-     * Close the current window.
-     */
     public function tearDown():void
     {
         $this->webDriver->close();
     }
 
-    /**
-     * @param WebDriver\Remote\RemoteWebElement $element
-     *
-     * @return WebDriver\WebDriverSelect
-     * @throws WebDriver\Exception\UnexpectedTagNameException
-     */
     private function getSelect(WebDriver\Remote\RemoteWebElement $element): WebDriver\WebDriverSelect
     {
         return new WebDriver\WebDriverSelect($element);
