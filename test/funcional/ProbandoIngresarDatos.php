@@ -30,7 +30,7 @@ class ProbandoIngresarDatosTest extends TestCase
      * Method testProbandoIngresarDatos
      * @test
      */
-    public function testProbandoIngresarDatosYMandarEmail()
+    public function testProbandoIngresarDatos()
     {
         $this->webDriver->get("http://turismonacionaleinternacional/index.php");
 		

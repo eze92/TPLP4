@@ -7,10 +7,14 @@ require_once('vendor/autoload.php');
 
 class subirAnecdotaTest extends TestCase
 {
-
+    /**
+     * @var WebDriver\Remote\RemoteWebDriver
+     */
     private $webDriver;
 
-
+    /**
+     * @var string
+     */
     private $baseUrl;
 
     public function setUp():void
@@ -20,8 +24,11 @@ class subirAnecdotaTest extends TestCase
         $this->webDriver = WebDriver\Remote\RemoteWebDriver::create('http://localhost:4444/wd/hub', $desiredCapabilities);
     }
 
-
-    public function subirAnecdota()
+    /**
+     * Method testsubirAnecdota
+     * @test
+     */
+    public function testsubirAnecdota()
     {
       
         $this->webDriver->get("http://turismonacionaleinternacional/modelo/agenda.php");
@@ -56,7 +63,7 @@ class subirAnecdotaTest extends TestCase
     
     private function existeArchivo() 
     { 
-        $nombre_fichero = __DIR__ .'../imagenes/board-361516_1920.jpg';
+        $nombre_fichero = __DIR__ .'../../../imagenes/board-361516_1920.jpg';
         if (file_exists($nombre_fichero)) {
              return true;
          } else {
@@ -66,24 +73,31 @@ class subirAnecdotaTest extends TestCase
 
     private function tamanioArchivo()
     {
-        $nombre_fichero = __DIR__ .'../imagenes/board-361516_1920.jpg';
+        $nombre_fichero = __DIR__ .'../../../imagenes/board-361516_1920.jpg';
         $tamanio_imagen = filesize($nombre_fichero);
 
         return $tamanio_imagen;
     } 
     private function nombreArchivo()
     {
-        $nombre_fichero = __DIR__ .'../imagenes/board-361516_1920.jpg';
+        $nombre_fichero = __DIR__ .'../../../imagenes/board-361516_1920.jpg';
         $nombreArchivo = basename($nombre_fichero);
 
         return $nombreArchivo;
     }   
-
+    /**
+     * Close the current window.
+     */
     public function tearDown():void
     {
         $this->webDriver->close();
     }
-
+     /**
+     * @param WebDriver\Remote\RemoteWebElement $element
+     *
+     * @return WebDriver\WebDriverSelect
+     * @throws WebDriver\Exception\UnexpectedTagNameException
+     */
     private function getSelect(WebDriver\Remote\RemoteWebElement $element): WebDriver\WebDriverSelect
     {
         return new WebDriver\WebDriverSelect($element);
