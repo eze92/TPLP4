@@ -10,6 +10,8 @@ La pagina fue realizada utilizando las siguientes herramientas:
 
 + WampServer para el localhost
 
++ MySQL para la base de datos
+
 + Libreria PHPUNIT para realizar test en general
 
 + Libreria PHPUNIT-Webdriver la cual utiliza selenium para los test funcionales
