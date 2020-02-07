@@ -2,5 +2,15 @@
 
 [![Build Status](https://travis-ci.org/eze92/TPLP4.svg?branch=master)](https://travis-ci.org/eze92/TPLP4)
 
-El trabajo fue realizado utilizando wampserver para probar la pagina de forma local ; phpunit para realizar las pruebas unitarias
-y phpunit-webdriver ( libreria que utiliza selenium ) para realizar las pruebas funcionales 
+## Arquitectura
+
+Se decidio utilizar HTML5 para la estructura estatica junto a CC3 y PHP 7.3 para la parte dinamica, asemejando la estructura al patron de diseño MVC
+
+La pagina fue realizada utilizando las siguientes herramientas:
+
++ WampServer para el localhost
+
++ Libreria PHPUNIT para realizar test en general
+
++ Libreria PHPUNIT-Webdriver la cual utiliza selenium para los test funcionales
+
