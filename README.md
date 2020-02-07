@@ -4,7 +4,7 @@
 
 ## Arquitectura
 
-Se decidio utilizar HTML5 para la estructura estatica junto a CC3 y PHP 7.3 para la parte dinamica, asemejando la estructura al patron de diseño MVC
+Se decidio utilizar HTML5 para la estructura estatica junto a CSS3 y PHP 7.3 para la parte dinamica, asemejando la estructura al patron de diseño MVC
 
 La pagina fue realizada utilizando las siguientes herramientas:
 
