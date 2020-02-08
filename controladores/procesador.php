@@ -44,8 +44,8 @@
 
 		//Recipients
 			$mail->setFrom($email, $nombre);                          // desde donde se va enviar 
-			$mail->addAddress('ezequiel.ledesma026@gmail.com');      // Add a recipient   a donde se va enviar
-			$mail->addAddress($email); 
+			$mail->addAddress('turismotp2020@gmail.com');      // Add a recipient   a donde se va enviar
+			//$mail->addAddress($email); 
 		// Content
 			$mail->isHTML(true);                                  // Set email format to HTML
 			$mail->Subject =  $asunto;
