@@ -17,3 +17,7 @@
 
 	}
 ?>
+<script type="text/javascript">
+	alert("Anecdota Eliminada!!");
+	window.location.href='../modelo/agenda.php';
+</script>
