@@ -1,7 +1,5 @@
 <?php
 
-
-
 		$nombre=$_POST['nombre'];
 		$apellido=$_POST['apellido'];
 		$email=$_POST['email'];
@@ -23,31 +21,26 @@
 		require '../PHPMailer/Exception.php';
 		require '../PHPMailer/PHPMailer.php';
 		require '../PHPMailer/SMTP.php';
-		
-		
-		// Load Composer's autoloader
-		//require 'vendor/autoload.php';
 
         if((include 'validadorFormulario.php' ) == TRUE){
 
 		$mail = new PHPMailer(true);
 		try {
 			//Server settings
-			$mail->SMTPDebug = 0;                      // Enable verbose debug output veo el bug al enviar mail 
+			$mail->SMTPDebug = 0;                      					// Enable verbose debug output veo el bug al enviar mail 
 			$mail->isSMTP();                                            // Send using SMTP
 			$mail->Host       = 'smtp.gmail.com';                       // Set the SMTP server to send through seteo servidor de correo
 			$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-			$mail->Username   = 'turismotp2020@gmail.com';                     // SMTP username
-			$mail->Password   = 'Tdragon92';                               // SMTP password
+			$mail->Username   = 'turismotp2020@gmail.com';              // SMTP username
+			$mail->Password   = 'Tdragon92';                            // SMTP password
 			$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
 			$mail->Port       = 587;                                    // TCP port to connect to
 
 		//Recipients
-			$mail->setFrom($email, $nombre);                          // desde donde se va enviar 
-			$mail->addAddress('turismotp2020@gmail.com');      // Add a recipient   a donde se va enviar
-			//$mail->addAddress($email); 
+			$mail->setFrom($email, $nombre);                         	// desde donde se va enviar 
+			$mail->addAddress('turismotp2020@gmail.com');      			// Add a recipient   a donde se va enviar
 		// Content
-			$mail->isHTML(true);                                  // Set email format to HTML
+			$mail->isHTML(true);                                  		// Set email format to HTML
 			$mail->Subject =  $asunto;
 			$mail->Body    =  $contenido;
 			$mail->CharSet = 'UTF-8';
