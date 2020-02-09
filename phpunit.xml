@@ -5,6 +5,9 @@
             <directory>test/unitarios</directory>	
 		</testsuite>		
 	</testsuites>
+	<whitelist addUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src</directory>
+    </whitelist>
 </phpunit>
 
 
