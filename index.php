@@ -11,12 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
 
-	 <script type="text/javascript" charset="utf-8" src="js/animacion_edgePreload.js"></script>
-
-	
-	 
-	 
-	
+	<script type="text/javascript" charset="utf-8" src="js/animacion_edgePreload.js"></script>
 
 </head>
 <body> 
@@ -136,13 +131,10 @@
 
 	
 	<footer>
-		<p >
-			Turismo Nacional e interncional 
- 			Caseros Buenos Aires Argentina, Valentín Gómez 4772, B1678			
- 			turismo_nacional_internacional@hotmail.com- Tel. / Fax: +54 11 4575-5012 
-		</p>
-			
-		<p >Copyright 2020 :Diseño y Programación: Ezequiel Ledesma</p>
+		<p>	Turismo Nacional e interncional </p>
+ 		<p>	Caseros Buenos Aires Argentina, Valentín Gómez 4772, B1678	</p>		
+ 		<p>	turismo_nacional_internacional@hotmail.com- Tel. / Fax: +54 11 4575-5012 </p>
+		<p>Copyright 2020 :Diseño y Programación: Ezequiel Ledesma</p>
 		
 	</footer>
 

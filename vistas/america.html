@@ -1,135 +1,130 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Turismo</title>
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="../css/estilos.css">
-	<link rel="stylesheet" href="../css/normalize.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Turismo</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="../css/normalize.css">
 </head>
+
 <body>
 
-	<header>
+    <header>
 
-		<div class ="holder">
-			
-		<section class ="logo">	
-		<img src="../galeria/logo.jpg" alt="logo">
-		</section>
+        <div class="holder">
 
-		<h1>Turismo Nacional e Internacional  </h1>
-			
-			<div id="facebook">
-				<p><a href="http://www.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32  /></a></p>	
-			</div>
+            <section class="logo">
+                <img src="../galeria/logo.jpg" alt="logo">
+            </section>
 
-			<div id="twitter">		
+            <h1>Turismo Nacional e Internacional  </h1>
 
-				<a href="http://twitter.com/" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
-			</div>
+            <div id="facebook">
+                <p>
+                    <a href="http://www.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="https://lh6.googleusercontent.com/-CYt37hfDnQ8/T3nNydojf_I/AAAAAAAAAr0/P5OtlZxV4rk/s32/facebook32.png" width=32 height=32 /></a>
+                </p>
+            </div>
 
-		</div>
-		
-		<section class="holder">
+            <div id="twitter">
 
-			<?php
+                <a href="http://twitter.com/" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
+            </div>
+
+        </div>
+
+        <section class="holder">
+
+            <?php
 			include("fecha.php");
 
-			?>		
+			?>
 
-	</section>	
+        </section>
 
+    </header>
+    <!-- /header -->
 
-	</header><!-- /header -->
+    <nav>
+        <div class="holder ">
 
-<nav>
-		<div class="holder ">
-			
-	
-			<ul>
-				<li><a href="../index.php" title="">Home</a></li>
-				<li><a href="#">¿Donde viajo?</a>
-         <ul>
-             <li><a href="../modelo/provincias.html">Provincias Argentinas </a></li>
-             <li><a href="#">Continentes</a>
-             	<ul>
-             		<li><a href="america.html">América</a></li>
-             		<li><a href="europa.html">Europa</a></li>
-             		<li><a href="asia.html">Asia</a></li>
-             	</ul>
+            <ul>
+                <li><a href="../index.php" title="">Home</a></li>
+                <li><a href="#">¿Donde viajo?</a>
+                    <ul>
+                        <li><a href="../modelo/provincias.html">Provincias Argentinas </a></li>
+                        <li><a href="#">Continentes</a>
+                            <ul>
+                                <li><a href="america.html">América</a></li>
+                                <li><a href="europa.html">Europa</a></li>
+                                <li><a href="asia.html">Asia</a></li>
+                            </ul>
+                    </ul>
+                    </li>
+                </li>
+                <li><a href="../modelo/servicios.html" title="">Servicios</a></li>
+                <li><a href="../modelo/pago.html" title="">Formas de Pago</a></li>
+                <li><a href="../modelo/agenda.php" title=""> Agenda </a></li>
+                <li><a href="../modelo/contacto.html" title="">Contacto</a></li>
+
             </ul>
-        </li>
-        </li>
-				<li><a href="../modelo/servicios.html" title="">Servicios</a></li>
-				<li><a href="../modelo/pago.html" title="">Formas de Pago</a></li>
-				<li><a href="../modelo/agenda.php" title=""> Agenda </a></li>
-				<li><a href="../modelo/contacto.html" title="">Contacto</a></li>
+        </div>
 
-			</ul>
-		</div>
+    </nav>
 
-	</nav>
+    <section class="holder ">
+        <h2>América</h2>
+        <h3>Seleccione el país a visitar:</h3>
 
-	
-	<section class="holder ">
-		<h2>América</h2>
-		<h3>Seleccione el país a visitar:</h3>
+        <div class="paises">
 
-		<div class ="paises">
+            <figure>
+                <img src="../galeria/paises/brasil.jpg" alt="brasil">
+            </figure>
 
-			<figure>
-				<img src="../galeria/paises/brasil.jpg" alt="brasil">	
-			</figure>
+            <div class="informacion">
+                <h4><a href="brasil.html">Brasil</a></h4>
+                <p>Con cinco millones de visitantes extranjeros en 2010,Brasil es uno de los principales destinos turísticos internacionales en América del Sur, y ocupa el tercer lugar en América Latina en términos de flujo de turistas internacionales, sólo después de México y Argentina. Los gastos de los turistas extranjeros que visitan Brasil alcanzaron los 4,9 mil millones de dólares en la primera mitad de 2011, un 15,5% más que en el mismo periodo en 2010.El país abarcó el 3,4% del flujo turístico internacional en el continente americano en 2010. En 2005, el turismo contribuyó con el 3,2% de los ingresos nacionales derivados de bienes y servicios, y fue el responsable de la creación de 7% de los empleos directos e indirectos. En 2006, se estima que 1,87 millones de personas fueron empleadas en el sector: 768 mil empleos formales (41%) y 1,1 millones de puestos informales (59%). El turismo nacional representa una parte fundamental del sector, contabilizando 51 millones de viajes en 2005.</p>
+            </div>
 
-			<div class="informacion">
-			<h4><a href="brasil.html">Brasil</a></h4>
-			<p>Con cinco millones de visitantes extranjeros en 2010,Brasil es uno de los principales destinos turísticos internacionales en América del Sur, y ocupa el tercer lugar en América Latina en términos de flujo de turistas internacionales, sólo después de México y Argentina.
-			Los gastos de los turistas extranjeros que visitan Brasil alcanzaron los 4,9 mil millones de dólares en la primera mitad de 2011, un 15,5% más que en el mismo periodo en 2010.El país abarcó el 3,4% del flujo turístico internacional en el continente americano en 2010. En 2005, el turismo contribuyó con el 3,2% de los ingresos nacionales derivados de bienes y servicios, y fue el responsable de la creación de 7% de los empleos directos e indirectos. En 2006, se estima que 1,87 millones de personas fueron empleadas en el sector: 768 mil empleos formales (41%) y 1,1 millones de puestos informales (59%). El turismo nacional representa una parte fundamental del sector, contabilizando 51 millones de viajes en 2005.</p>
-			</div>
+        </div>
 
-	</div>
+        <div class="paises">
 
-		<div class ="paises">
+            <figure>
+                <img src="../galeria/paises/usa.jpg" alt="usa">
+            </figure>
 
-		
-			<figure>
-				<img src="../galeria/paises/usa.jpg" alt="usa">				
-			</figure>
-		
-			<div class="informacion">
-				<h4><a href="usa.html">Estados Unidos</a></h4>
-				<p>Brasil es el país que más turistas recibe en América del Sur. A partir de 1995, el turismo pasó a ser encarado como actividad estratégica por parte del Gobierno Federal brasileño. La Política Nacional de Turismo, implementada por el Instituto Brasileño de Turismo (Embratur), tiene como línea maestra la práctica del turismo como forma de promover la preservación del patrimonio natural y cultural del País, además de la valorización del hombre como destinatario final del desarrollo turístico. Además de eso, tiene por finalidad promover e incrementar el turismo como fuente de renta, de generación de empleo y de desarrollo socioeconómico. A partir de 1999, la Política Nacional de Turismo fue reorientada y alineada a las orientaciones estratégicas del Gobierno, elaborándose sus objetivos sectoriales y, como resultado, los Programas y Acciones de Embratur para el período 2000 a 2003. Todos los años, la Organización Mundial del Turismo (OMT) realiza un levantamiento para evaluar la participación del turismo en la economía de cada nación. Brasil se ha destacado cada año como mercado turístico, mostrando un creciente aumento del volumen de turistas extranjeros que visitan el país, principalmente a partir de la desvalorización del Real en 1999. Así, en 1992, Brasil recibió 1 millón 600 mil visitantes. En 1999, fueron 5 millones 100 mil personas que visitaron el país. En el 2000, Brasil recibió cerca de 5 millones 300 mil turistas extranjeros, siendo —de ese total— 1 millón 700 mil argentinos.</p>
+            <div class="informacion">
+                <h4><a href="usa.html">Estados Unidos</a></h4>
+                <p>Brasil es el país que más turistas recibe en América del Sur. A partir de 1995, el turismo pasó a ser encarado como actividad estratégica por parte del Gobierno Federal brasileño. La Política Nacional de Turismo, implementada por el Instituto Brasileño de Turismo (Embratur), tiene como línea maestra la práctica del turismo como forma de promover la preservación del patrimonio natural y cultural del País, además de la valorización del hombre como destinatario final del desarrollo turístico. Además de eso, tiene por finalidad promover e incrementar el turismo como fuente de renta, de generación de empleo y de desarrollo socioeconómico. A partir de 1999, la Política Nacional de Turismo fue reorientada y alineada a las orientaciones estratégicas del Gobierno, elaborándose sus objetivos sectoriales y, como resultado, los Programas y Acciones de Embratur para el período 2000 a 2003. Todos los años, la Organización Mundial del Turismo (OMT) realiza un levantamiento para evaluar la participación del turismo en la economía de cada nación. Brasil se ha destacado cada año como mercado turístico, mostrando un creciente aumento del volumen de turistas extranjeros que visitan el país, principalmente a partir de la desvalorización del Real en 1999. Así, en 1992, Brasil recibió 1 millón 600 mil visitantes. En 1999, fueron 5 millones 100 mil personas que visitaron el país. En el 2000, Brasil recibió cerca de 5 millones 300 mil turistas extranjeros, siendo —de ese total— 1 millón 700 mil argentinos.</p>
 
-			</div>
-		</div>	
+            </div>
+        </div>
 
-		<div class ="paises">
+        <div class="paises">
 
-			<figure>
-				<img src="../galeria/paises/chile.jpg" alt="chile">	
-			</figure>
-			<div class="informacion">
-				<h4><a href="chile.html">Chile</a></h4>
-				<p>Desde mediados de los años 1990, el turismo se ha convertido en uno de los principales recursos económicos de Chile, especialmente en las zonas más extremas del país. En 2005, este sector tuvo un crecimiento de un 13,6 %, generando más de USD 1 500 millones, equivalentes al 1,33 % del PIB nacional. En su promoción turística en el exterior, Chile invirtió un total de USD 6 millones en 2012.
-				Según la OMT, Chile fue el octavo destino para turistas extranjeros dentro de América en 2010,capturando el 1,8 % del total de visitas al continente. Ese año, llegaron al país 2 766 000 turistas que generaron ingresos por USD 1 636 millones.La mayoría de estos visitantes provinieron de países del continente, principalmente de Argentina; sin embargo, el mayor crecimiento en los últimos años ha correspondido al de visitantes de Europa, principalmente de Alemania.Durante el primer trimestre de 2011, entraron más de 1 043 000 turistas, lo que significó un aumento del 9,2 % con respecto al mismo periodo del año anterior,que se convirtieron en un total de 3 069 792 hasta fines de ese año. A su vez, un total de 3 724 118 chilenos visitaron otros países en 2011.</p>
+            <figure>
+                <img src="../galeria/paises/chile.jpg" alt="chile">
+            </figure>
+            <div class="informacion">
+                <h4><a href="chile.html">Chile</a></h4>
+                <p>Desde mediados de los años 1990, el turismo se ha convertido en uno de los principales recursos económicos de Chile, especialmente en las zonas más extremas del país. En 2005, este sector tuvo un crecimiento de un 13,6 %, generando más de USD 1 500 millones, equivalentes al 1,33 % del PIB nacional. En su promoción turística en el exterior, Chile invirtió un total de USD 6 millones en 2012. Según la OMT, Chile fue el octavo destino para turistas extranjeros dentro de América en 2010,capturando el 1,8 % del total de visitas al continente. Ese año, llegaron al país 2 766 000 turistas que generaron ingresos por USD 1 636 millones.La mayoría de estos visitantes provinieron de países del continente, principalmente de Argentina; sin embargo, el mayor crecimiento en los últimos años ha correspondido al de visitantes de Europa, principalmente de Alemania.Durante el primer trimestre de 2011, entraron más de 1 043 000 turistas, lo que significó un aumento del 9,2 % con respecto al mismo periodo del año anterior,que se convirtieron en un total de 3 069 792 hasta fines de ese año. A su vez, un total de 3 724 118 chilenos visitaron otros países en 2011.</p>
 
+            </div>
 
-			</div>
+        </div>
 
-		</div>
-	
-	</section>
-	
-	
-	<footer>
-			<p >
-			Turismo Nacional e interncional 
- 			Caseros Buenos Aires Argentina, Valentín Gómez 4772, B1678			
- 			turismo_nacional_internacional@hotmail.com- Tel. / Fax: +54 11 4575-5012 
-		</p>
-			
-		<p >Copyright 2020 :Diseño y Programación: Ezequiel Ledesma</p>
-	</footer>
+    </section>
+
+    <footer>
+        <p> Turismo Nacional e interncional </p>
+        <p> Caseros Buenos Aires Argentina, Valentín Gómez 4772, B1678 </p>
+        <p> turismotp2020@gmail.com- Tel. / Fax: +54 11 4575-5012 </p>
+        <p> Copyright 2020 :Diseño y Programación: Ezequiel Ledesma</p>
+    </footer>
 </body>
+
 </html>
