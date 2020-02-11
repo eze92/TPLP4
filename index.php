@@ -8,7 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/normalize.css">
-
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/jcarousel.basic.css">
 
@@ -38,22 +38,22 @@
                 <a href="http://twitter.com/" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
             </div>
 
-            <div id= "logeo">
-            	<ul>
-            		<li><a href="modelo/login.php" title=""> Login </a></li>
-            		<li><a href="../controladores/usuario_nuevo.php" title=""> Registro </a></li>
-            	</ul>
-            </div>	
+            <section class="holder">
+
+                <?php
+			include("fecha.php");
+			?>
+            </section>
+
+            <section class="login">
+                <ul>
+                    <li><a href="modelo/login.php" title="" style="color:#FF0000"> Login </a></li>
+                    <li><a href="../controladores/usuario_nuevo.php" title="" style="color:#FF0000"> Registro </a></li>
+                </ul>
+            </section>
         </div>
 
-        <section class="holder">
-
-            <?php
-			include("fecha.php");
-
-			?>
-
-        </section>
+        </div>
 
     </header>
     <!-- /header -->
