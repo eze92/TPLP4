@@ -95,11 +95,11 @@
                         <form action="modificarFuncion.php" method="POST" class="formularioagenda" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
                             <input type="hidden" name="nro_trans" value="<?php echo $_GET['nro_trans']?>">
 
-                            <label>Usuario: </label>
+                            <label>Nombre: </label>
                             <input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>" required>
                             <br>
 
-                            <label>Anecdota: </label>
+                            <label>Relato: </label>
                             <textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" required>
                                 <?php echo $consulta[2] ?>
                             </textarea>

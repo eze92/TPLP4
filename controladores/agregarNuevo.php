@@ -76,11 +76,11 @@
                         <br>
                         <form action="agregarFuncion.php" method="POST" class="formularioagenda" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
 
-                            <label>Usuario: </label>
+                            <label>Nombre: </label>
                             <input type="text" id="usuario" name="usuario" required>
                             <br>
 
-                            <label>Anecdota: </label>
+                            <label>Relato: </label>
                             <textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" required></textarea>
                             <br>
 

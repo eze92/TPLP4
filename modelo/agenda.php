@@ -73,8 +73,8 @@
             <table class="agenda" border="2">
                 <thead>
                     <th>Nro Anecdota</th>
-                    <th>Usuario</th>
-                    <th>Descripcion</th>
+                    <th>Nombre</th>
+                    <th>Relato</th>
                     <th>Imagen</th>
                     <th>
                         <a href="../controladores/agregarNuevo.php">
