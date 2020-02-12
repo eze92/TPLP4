@@ -76,7 +76,7 @@
                     <div class="checkbox">
 
                     </div>
-                    <button class="btn btn-lg btn-primary btn-block" type="submit">Registrarse</button>
+                    <button class="btn btn-lg btn-primary btn-block" type="submit">Log In</button>
                 </form>
             </div>
 

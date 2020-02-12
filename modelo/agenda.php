@@ -94,10 +94,6 @@
                     <th>Imagen</th>
                     <th>
                         <?php  
-                      //  include "../controladores/conect.php";
-                       // $sentencia = "SELECT usuario from usuarios";
-                       // $resultado = $conexion -> query($sentencia) or die (mysqli_error($conexion));
-                       // while($fila=$resultado->fetch_assoc()) {
                         if (isset($_SESSION["usuario"]) ){
 
                        echo '<a href="../controladores/agregarNuevo.php">
@@ -106,7 +102,6 @@
                     }else{
                        
                     }
-                //}
                         ?>
                     </th>
                     <th> </th>
@@ -123,8 +118,17 @@
             echo "<td>"; echo $fila['usuario']; echo "</td>";
             echo "<td>"; echo $fila['anecdota']; echo "</td>";
             echo "<td>"; echo "<img src='".$fila['imagen']."' width='300' >"; echo "</td>";
+
+            if (isset($_SESSION["usuario"]) ){
+
             echo "<td><a href='../controladores/modificar.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-success'>Modificar</button> </a></td>";
             echo "<td><a href='../controladores/eliminarAnecdota.php?nro_trans=".$fila['nro_trans']."'> <button type='button' class='btn btn-danger' onclick='return ConfirmDelete()'>Eliminar</button> </a></td>";
+
+            }else{
+                echo"<td>"; echo"</td>";
+                echo"<td>"; echo"</td>";
+
+              }  
 
           echo "</tr>";
         }
