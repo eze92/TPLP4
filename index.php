@@ -47,8 +47,8 @@
 
             <section class="login">
                 <ul>
-                    <li><a href="modelo/login.php" title="" style="color:#FF0000"> Login </a></li>
-                    <li><a href="../controladores/usuario_nuevo.php" title="" style="color:#FF0000"> Registro </a></li>
+                    <li><a href="modelo/login.php" title="" > Login </a></li>
+                    <li><a href="../controladores/usuario_nuevo.php" title="" > Registro </a></li>
                 </ul>
             </section>
         </div>

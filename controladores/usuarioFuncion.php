@@ -18,7 +18,7 @@
 			$_SESSION['usuario']=$usuario;
 			echo '<script>';
 				echo 'alert("Bienvenido!!");';
-				echo 'window.location.href="../index.php";';
+				echo 'window.location.href="../modelo/agenda.php";';
 			echo '</script>';
 		}
 		else

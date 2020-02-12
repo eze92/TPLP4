@@ -3,4 +3,7 @@ body .login ul li{
 	width: 15%;	
 }
 
-	
+body .login ul li a{
+    color:#08F9E6;
+}
+

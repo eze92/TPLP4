@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -8,6 +11,9 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/login.css">
+
+
 </head>
 
 <body>
@@ -27,14 +33,24 @@
                 </p>
             </div>
 
-        </div>
+   
 
         <div id="twitter">
 
             <a href="http://twitter.com/" target="_blank"><img src="https://lh6.googleusercontent.com/--aIk2uBwEKM/T3nN1x09jBI/AAAAAAAAAs8/qzDsbw3kEm8/s32/twitter32.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
         </div>
 
+        <section class="login">
+                <ul>
+                    <li><a href="../controladores/salir.php" title="" > Salir </a></li>
+                </ul>
+        </section>
+
+        </div>
+
     </header>
+
+        
     <!-- /header -->
 
     <nav>
@@ -77,9 +93,21 @@
                     <th>Descripcion</th>
                     <th>Imagen</th>
                     <th>
-                        <a href="../controladores/agregarNuevo.php">
-                            <button type='button' class='btn btn-info'>Nuevo</button>
-                        </a>
+                        <?php  
+                      //  include "../controladores/conect.php";
+                       // $sentencia = "SELECT usuario from usuarios";
+                       // $resultado = $conexion -> query($sentencia) or die (mysqli_error($conexion));
+                       // while($fila=$resultado->fetch_assoc()) {
+                        if (isset($_SESSION["usuario"]) ){
+
+                       echo '<a href="../controladores/agregarNuevo.php">
+                            <button type="button" class="btn btn-info">Nuevo</button>
+                        </a>';
+                    }else{
+                       
+                    }
+                //}
+                        ?>
                     </th>
                     <th> </th>
 
