@@ -17,6 +17,14 @@ function NuevaAnecdota($usu, $anecd)
         "image/jpg",
         "image/png"
     );
+
+    $sentencia="SELECT * FROM agenda where usuario =  '".$usu."'";
+    $resultado=$conexion->query($sentencia) or die ("Error al comprobar usuario: ".mysqli_error($conexion));
+    $count = mysqli_num_rows($resultado);
+
+    if($count >0){
+        echo '<script>    alert("Ya se encuentra ingresada la anecdota"); window.location.href="../modelo/agenda.php";</script>';
+    }else{
     
     if (in_array($tipo_imagen, $tipos) && $tamanio_imagen <= $maximo) {
         
@@ -31,6 +39,7 @@ function NuevaAnecdota($usu, $anecd)
     } else {
         echo '<script>    alert("La anecdota no pudo ser ingresa, verifique el tipo de archivo y el tamaño de la imagen!!"); window.location.href="../modelo/agenda.php";</script>';
     }
+}
     
 }
 
