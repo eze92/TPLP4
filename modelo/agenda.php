@@ -66,39 +66,6 @@
                         </ul>
                         </li>
                     </li>
-<<<<<<< HEAD
-                </li>
-                <li><a href="servicios.html" title="">Servicios</a></li>
-                <li><a href="pago.html" title="">Formas de Pago</a></li>
-                <li><a href="agenda.php" title=""> Agenda </a></li>
-                <li><a href="contacto.html" title=""> Contacto </a></li>
-            </ul>
-        </div>
-
-    </nav>
-
-    <section class="holder">
-        <h2>Agenda del viajero</h2>
-
-        <div class="">
-
-            <p>Ingrese la anecdota que desea guardar.La imagen a subir debe ser de tipo png,jpg,jpeg o gif y cuyo tamaño debe ser menor o igual a 2MB.</p>
-
-            <table class="agenda" border="2">
-                <thead>
-                    <th>Nro Anecdota</th>
-                    <th>Nombre</th>
-                    <th>Relato</th>
-                    <th>Imagen</th>
-                    <th>
-                        <a href="../controladores/agregarNuevo.php">
-                            <button type='button' class='btn btn-info'>Nuevo</button>
-                        </a>
-                    </th>
-                    <th> </th>
-
-                    <?php
-=======
                     <li><a href="servicios.html" title="">Servicios</a></li>
                     <li><a href="pago.html" title="">Formas de Pago</a></li>
                     <li><a href="agenda.php" title=""> Agenda </a></li>
@@ -127,7 +94,7 @@
 
                        echo '<a href="../controladores/agregarNuevo.php">
                             <button type="button" class="btn btn-info">Nuevo</button>
-                        </a>';
+                            </a>';
                     }else{
 
                     }
@@ -136,7 +103,6 @@
                         <th> </th>
 
                         <?php
->>>>>>> login
         include "../controladores/conect.php";
         $sentecia="SELECT * FROM agenda";
         $resultado= $conexion->query($sentecia) or die (mysqli_error($conexion));
