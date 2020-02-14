@@ -1,8 +1,23 @@
-{
-    "require-dev": {
-        "phpunit/phpunit": "7"
-    },
-    "require": {
-        "php-webdriver/webdriver": "^1.7"
-    }
+{ 
+   "autoload":{ 
+      "psr-4":{ 
+         "Facebook\\WebDriver\\":"lib/"
+      }
+   },
+   "autoload-dev":{ 
+      "psr-4":{ 
+         "Facebook\\WebDriver\\":[ 
+            "test/funcional"
+         ]
+      },
+      "classmap":[ 
+         "test/funcional/"
+      ]
+   },
+   "require-dev":{ 
+      "phpunit/phpunit":"7"
+   },
+   "require":{ 
+      "php-webdriver/webdriver":"^1.7"
+   }
 }
