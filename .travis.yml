@@ -2,9 +2,7 @@ language: php
 php:
  - 7.3
 services:
- - mysql
-install: 
- - "composer install"
+  - mysql
 before_script:
 - wget http://chromedriver.storage.googleapis.com/2.0/chromedriver_win32.zip
 script: phpunit --configuration phpunit.xml --coverage-text
