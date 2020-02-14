@@ -1,0 +1,9 @@
+body .login ul li{
+	display: inline-block;
+	width: 15%;	
+}
+
+body .login ul li a{
+    color:#08F9E6;
+}
+
