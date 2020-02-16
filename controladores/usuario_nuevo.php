@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/login.css">
 </head>
 
 <body>
@@ -65,8 +66,8 @@
 
     <form action="agregarUsuario.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
     <section class="holder">
-        <div class="">
-
+       <h2>Nuevo Usuario</h2>
+         <div id="contenido">
             <div class="row">
               <div class="col-xs-3">
               <label>Nombre:</label>
@@ -93,7 +94,6 @@
               <label>Tipo de Usuario:</label>
               <select name="tipo" id="tipo" class="form-control">
                   <option>ADMINISTRADOR</option>
-                  <option>VENTAS</option>
                 </select>
               </div>
             </div>

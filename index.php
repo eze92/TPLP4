@@ -49,6 +49,7 @@
                 <ul>
                     <li><a href="modelo/login.php" title="" > Login </a></li>
                     <li><a href="../controladores/usuario_nuevo.php" title="" > Registro </a></li>
+                    <li><a href="../controladores/salir.php" title="" > Salir </a></li>
                 </ul>
             </section>
         </div>
