@@ -71,28 +71,28 @@
             <div class="row">
               <div class="col-xs-3">
               <label>Nombre:</label>
-              <input type="text" name="nom" id="nom" class="form-control" >
+              <input type="text" name="nom" id="nom" class="form-control" required >
               </div>
             </div>
 
             <div class="row">
               <div class="col-xs-3">
               <label>Usuario:</label>
-              <input type="text" name="usr" id="usr" class="form-control" >
+              <input type="text" name="usr" id="usr" class="form-control" required>
               </div>
             </div>
 
             <div class="row">
               <div class="col-xs-3">
               <label>Password:</label>
-              <input type="password" name="pass" id="pass" class="form-control" >
+              <input type="password" name="pass" id="pass" class="form-control" required>
               </div>
             </div>
 
             <div class="row">
               <div class="col-xs-3">
               <label>Tipo de Usuario:</label>
-              <select name="tipo" id="tipo" class="form-control">
+              <select name="tipo" id="tipo" class="form-control" required>
                   <option>ADMINISTRADOR</option>
                 </select>
               </div>
