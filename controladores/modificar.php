@@ -61,7 +61,7 @@
             <div class="holder ">
 
                 <ul>
-                    <li><a href="index.php" title="">Home</a></li>
+                    <li><a href="../index.php" title="">Home</a></li>
                     <li><a href="#">¿Donde viajo?</a>
                         <ul>
                             <li><a href="provincias.html">Provincias Argentinas </a></li>
@@ -77,6 +77,7 @@
                     <li><a href="../modelo/servicios.html" title="">Servicios</a></li>
                     <li><a href="../modelo/pago.html" title="">Formas de Pago</a></li>
                     <li><a href="../modelo/agenda.php" title=""> Agenda </a></li>
+                    <li><a href="../modelo/contacto.html" title=""> Contacto </a></li>
                     <li><a href="../modelo/contacto.html" title=""> Contacto </a></li>
                 </ul>
             </div>
