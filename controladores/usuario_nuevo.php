@@ -65,43 +65,43 @@
     </nav>
 
     <form action="agregarUsuario.php" method="POST" style="border-collapse: separate; border-spacing: 10px 5px;">
-    <section class="holder">
-       <h2>Nuevo Usuario</h2>
-         <div id="contenido">
-            <div class="row">
-              <div class="col-xs-3">
-              <label>Nombre:</label>
-              <input type="text" name="nom" id="nom" class="form-control" required >
-              </div>
+        <section class="holder">
+            <h2>Nuevo Usuario</h2>
+            <div id="contenido">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <label>Nombre:</label>
+                        <input type="text" name="nom" id="nom" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <label>Usuario:</label>
+                        <input type="text" name="usr" id="usr" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <label>Password:</label>
+                        <input type="password" name="pass" id="pass" class="form-control" required>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-3">
+                        <label>Tipo de Usuario:</label>
+                        <select name="tipo" id="tipo" class="form-control" required>
+                            <option>ADMINISTRADOR</option>
+                        </select>
+                    </div>
+                </div>
+
             </div>
+            <button type="submit" class="btn btn-success">Guardar</button>
 
-            <div class="row">
-              <div class="col-xs-3">
-              <label>Usuario:</label>
-              <input type="text" name="usr" id="usr" class="form-control" required>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-3">
-              <label>Password:</label>
-              <input type="password" name="pass" id="pass" class="form-control" required>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-3">
-              <label>Tipo de Usuario:</label>
-              <select name="tipo" id="tipo" class="form-control" required>
-                  <option>ADMINISTRADOR</option>
-                </select>
-              </div>
-            </div>
-
-        </div>
-           <button type="submit" class="btn btn-success">Guardar</button>
-
-    </section>
+        </section>
     </form>
 
     <footer>
