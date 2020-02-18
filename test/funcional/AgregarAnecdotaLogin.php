@@ -5,7 +5,7 @@ use PHPUnit\Framework\TestCase;
 use Facebook\WebDriver;
 require_once('vendor/autoload.php');
 
-class AgregarAnecdotaNewTest extends TestCase
+class AgregarAnecdotaLogin extends TestCase
 {
     /**
      * @var WebDriver\Remote\RemoteWebDriver
@@ -22,7 +22,7 @@ class AgregarAnecdotaNewTest extends TestCase
      */
     public function setUp():void
     {
-       $desiredCapabilities = WebDriver\Remote\DesiredCapabilities::chrome();
+        $desiredCapabilities = WebDriver\Remote\DesiredCapabilities::chrome();
         $desiredCapabilities->setCapability('trustAllSSLCertificates', true);
         $this->webDriver = WebDriver\Remote\RemoteWebDriver::create('http://localhost:4444/wd/hub', $desiredCapabilities);
     }
@@ -33,46 +33,44 @@ class AgregarAnecdotaNewTest extends TestCase
      */
     public function testAgregarAnecdotaNew()
     {
-        // open | http://turismonacionaleinternacional/index.php | 
         $this->webDriver->get("http://turismonacionaleinternacional/index.php");
-        // click | link=Login | 
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::linkText("Login"))->click();
-        // click | id=inputUsuario | 
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::id("inputUsuario"))->click();
-        // type | id=inputUsuario | eze92
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::id("inputUsuario"))->sendKeys("eze92");
-        // click | id=inputPassword | 
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::id("inputPassword"))->click();
-        // type | id=inputPassword | 12345
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::id("inputPassword"))->sendKeys("12345");
-        // click | //button[@type='submit'] | 
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='submit']"))->click();
-        // click | //button[@type='button'] | 
 		
 		$this->webDriver->switchTo()->alert()->accept();	
 
 		
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
-        // click | id=usuario | 
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
-        // type | id=usuario | Viaje muy bien 
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("Viaje muy bien");
-        // click | //form[@action='agregarFuncion.php'] | 
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("eze92");
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//form[@action='agregarFuncion.php']"))->click();
-        // click | name=anecdota | 
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->click();
-        // type | name=anecdota | plplp
-        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->sendKeys("plplp");
-        // click | id=imagen | 
-       // $this->webDriver->findElement(WebDriver\WebDriverBy::id("imagen"))->click();
-        // type | id=imagen | C:\fakepath\board-361516_1920.jpg
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->sendKeys("Disfrute mucho del paisaje , la atencion del hotel fue muy buena, la recomiendo");
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::cssSelector("input[id=\"imagen\"]"))->sendKeys($this->getRutaImagen());
-        // click | //button[@type='submit'] | 
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='submit']"))->click();
-        // click | link=Salir | 
+
 		$this->webDriver->switchTo()->alert()->accept();	
 		
         $this->webDriver->findElement(WebDriver\WebDriverBy::linkText("Salir"))->click();
+
+        $this->webDriver->switchTo()->alert()->accept();    
 		
 		$this->assertTrue($this->existeArchivo());
 

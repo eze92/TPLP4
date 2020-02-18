@@ -2,8 +2,7 @@
 	session_start();
 	session_destroy();
 
-	echo '<script>';
-	    echo 'window.location="../index.php";';
-	echo '</script>';	
+	echo '<script>    alert("Cerro la sesion"); window.location.href="../index.php";</script>';  
+
 ?>
 

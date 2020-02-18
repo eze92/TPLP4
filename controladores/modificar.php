@@ -78,7 +78,6 @@
                     <li><a href="../modelo/pago.html" title="">Formas de Pago</a></li>
                     <li><a href="../modelo/agenda.php" title=""> Agenda </a></li>
                     <li><a href="../modelo/contacto.html" title=""> Contacto </a></li>
-                    <li><a href="../modelo/contacto.html" title=""> Contacto </a></li>
                 </ul>
             </div>
 
@@ -101,8 +100,7 @@
                             <br>
 
                             <label>Relato: </label>
-                            <textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota" required>
-                                <?php echo $consulta[2] ?>
+                            <textarea style="border-radius: 10px;" rows="3" cols="50" name="anecdota"> <?php echo $consulta[2] ?>  </textarea><br>
                             </textarea>
                             <br>
                             <label>Imagen: </label>
@@ -118,10 +116,10 @@
         </section>
 
         <footer>
-             <p> Turismo Nacional e interncional </p>
-        	 <p> Caseros Buenos Aires Argentina, Valentín Gómez 4772, B1678 </p>
-        	 <p> turismotp2020@gmail.com- Tel. / Fax: +54 11 4575-5012 </p>
-        	 <p> Copyright 2020 :Diseño y Programación: Ezequiel Ledesma</p>
+            <p> Turismo Nacional e interncional </p>
+            <p> Caseros Buenos Aires Argentina, Valentín Gómez 4772, B1678 </p>
+            <p> turismotp2020@gmail.com- Tel. / Fax: +54 11 4575-5012 </p>
+            <p> Copyright 2020 :Diseño y Programación: Ezequiel Ledesma</p>
         </footer>
 
     </body>
