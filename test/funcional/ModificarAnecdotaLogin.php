@@ -100,7 +100,7 @@ class ModificarAnecdotaLoginTest extends TestCase
 
     private function nombreArchivo()
     {
-        $nombre_fichero = __DIR__ .'../imagenes/board-361516_1920.jpg';
+        $nombre_fichero = __DIR__ .'../../../imagenes/board-361516_1920.jpg';
         $nombreArchivo = basename($nombre_fichero);
 
         return $nombreArchivo;

@@ -58,7 +58,7 @@ class EliminarAnecdotaLoginTest extends TestCase
 
     private function existeArchivo() 
     { 
-        $nombre_fichero = __DIR__ .'../../../imagenes/board-361516_1920.jpg';
+        $nombre_fichero = __DIR__ .'../../../../imagenes/board-361516_1920.jpg';
         if (file_exists($nombre_fichero)) {
              return true;
          } else {
