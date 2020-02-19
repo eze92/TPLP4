@@ -4,6 +4,10 @@ use PHPUnit\Framework\TestCase;
 use Facebook\WebDriver;
 require_once('vendor/autoload.php');
 
+require '../../PHPMailer/Exception.php';
+require '../../PHPMailer/PHPMailer.php';
+require '../../PHPMailer/SMTP.php';
+
 class ProbandoIngresarDatosTest extends TestCase
 {
     /**
@@ -32,6 +36,9 @@ class ProbandoIngresarDatosTest extends TestCase
      */
     public function testProbandoIngresarDatos()
     {
+
+        try {
+
         $this->webDriver->get("http://turismonacionaleinternacional/index.php");
 		
 		$this->webDriver->findElement(WebDriver\WebDriverBy::linkText("Contacto"))->click();
@@ -57,7 +64,10 @@ class ProbandoIngresarDatosTest extends TestCase
 		$this->webDriver->switchTo()->alert()->dismiss();	
 		
 		$this->assertStringContainsString('Turismo', $this->webDriver->getTitle());
-	
+	       }
+        catch (Exception $e) {
+            echo "Se produjo un error al enviar el mensaje";
+           }
 		}
 		
 
