@@ -71,21 +71,24 @@
                 <div class="row">
                     <div class="col-xs-3">
                         <label>Nombre:</label>
-                        <input type="text" name="nom" id="nom" class="form-control" required>
+                        <input type="text" name="nom" id="nom" class="form-control"  minlength="5" maxlength="40" required pattern="[A-Za-z]+"
+                        title="Solo Letras. Tamaño mínimo: 5. Tamaño máximo: 30" >
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-xs-3">
                         <label>Usuario:</label>
-                        <input type="text" name="usr" id="usr" class="form-control" required>
+                        <input type="text" name="usr" id="usr" class="form-control" minlength="5" maxlength="10" required pattern="[A-Za-z0-9]+"
+                        title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 10" >
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-xs-3">
                         <label>Password:</label>
-                        <input type="password" name="pass" id="pass" class="form-control" required>
+                        <input type="password" name="pass" id="pass" class="form-control" minlength="5" maxlength="10" required pattern="[A-Za-z0-9]+"
+                         title="Letras y números. Tamaño mínimo: 5. Tamaño máximo: 10" >
                     </div>
                 </div>
 

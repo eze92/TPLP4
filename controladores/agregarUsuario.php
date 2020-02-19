@@ -5,7 +5,7 @@
 	{
 		include 'conect.php';
 
-		$sentencia="SELECT 1 FROM usuarios where usuario = '".$usuario."' " ;
+		$sentencia="SELECT DISTINCT 1 FROM usuarios where usuario = '".$usuario."' " ;
     	$resultado=$conexion->query($sentencia) or die ("Error al comprobar usuario: ".mysqli_error($conexion));
     	$count = mysqli_num_rows($resultado);
 
