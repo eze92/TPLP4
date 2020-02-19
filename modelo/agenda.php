@@ -39,7 +39,12 @@
 
                 <section class="login">
                     <ul>
-                        <li><a href="../controladores/salir.php" title=""> Salir </a></li>
+                         <?php
+                         if (isset($_SESSION["usuario"]) ){
+
+                            echo "<li><a href='../controladores/salir.php' > Salir </a></li>";
+                         }
+                        ?>
                     </ul>
                 </section>
 
