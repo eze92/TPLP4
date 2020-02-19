@@ -79,7 +79,7 @@ class AgregarAnecdotaLogin extends TestCase
         $this->assertSame('board-361516_1920.jpg',$this->nombreArchivo());	
 
     }
-
+    
     public function testConsultarTamanio(){
         $this->webDriver->get("http://turismonacionaleinternacional/index.php");
         $this->assertSame(735016,$this->tamanioArchivo());
