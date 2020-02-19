@@ -5,7 +5,8 @@ use PHPUnit\Framework\TestCase;
 use Facebook\WebDriver;
 require_once('vendor/autoload.php');
 
-class EliminarAnecdotaLoginTest extends TestCase
+
+class EliminarAnecdotaLogin extends TestCase
 {
     /**
      * @var WebDriver\Remote\RemoteWebDriver
@@ -28,16 +29,20 @@ class EliminarAnecdotaLoginTest extends TestCase
     }
 
     /**
-     * Method testEliminarAnecdotaLogin
+     * Method testUntitledTestCase
      * @test
      */
-    public function testEliminarAnecdotaLogin()
+    public function testEliminarAnecdota()
     {
-        $this->webDriver->get("http://turismonacionaleinternacional/index.php#");
+        $this->webDriver->get("http://turismonacionaleinternacional/index.php");
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::linkText("Login"))->click();
 
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("inputUsuario"))->click();
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::id("inputUsuario"))->sendKeys("eze92");
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("inputPassword"))->click();
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::id("inputPassword"))->sendKeys("12345");
 
@@ -45,26 +50,43 @@ class EliminarAnecdotaLoginTest extends TestCase
 
         $this->webDriver->switchTo()->alert()->accept();
 
+        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("eze92");
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->click();
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->sendKeys("La pase muy bien");
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::cssSelector("input[id=\"imagen\"]"))->sendKeys($this->getRutaImagen());
+
+        $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='submit']"))->click();
+
+        $this->webDriver->switchTo()->alert()->accept();
+
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("(//button[@type='button'])[3]"))->click();
-
-        $this->webDriver->switchTo()->alert()->dismiss();
-
-        $this->webDriver->findElement(WebDriver\WebDriverBy::linkText("Salir"))->click();
 
         $this->webDriver->switchTo()->alert()->accept();
 
         $this->assertFalse($this->existeArchivo());
     }
 
+    private function getRutaImagen()
+    {
+        return __DIR__ . '/imagenprueba/nature-1547302_1920.jpg';
+    }
+
     private function existeArchivo() 
     { 
-        $nombre_fichero = __DIR__ .'../../../../imagenes/board-361516_1920.jpg';
-        if (file_exists($nombre_fichero)) {
+        $nombre_fichero = __DIR__ .'../../../imagenes/nature-1547302_1920.jpg';
+        if (!file_exists($nombre_fichero)) {
              return true;
          } else {
              return false;
         }
-    } 
+    }
 
     /**
      * Close the current window.

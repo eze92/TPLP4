@@ -76,11 +76,22 @@ class AgregarAnecdotaLogin extends TestCase
 
         $this->assertSame(735016,$this->tamanioArchivo());
 
-        $this->assertSame('board-361516_1920.jpg',$this->nombreArchivo());
-		
+        $this->assertSame('board-361516_1920.jpg',$this->nombreArchivo());	
 
     }
-	 private function getRutaImagen()
+
+    public function testConsultarTamanio(){
+        $this->webDriver->get("http://turismonacionaleinternacional/index.php");
+        $this->assertSame(735016,$this->tamanioArchivo());
+
+    }
+
+    public function testConsultarNombre(){
+         $this->webDriver->get("http://turismonacionaleinternacional/index.php");
+         $this->assertSame('board-361516_1920.jpg',$this->nombreArchivo()); 
+    }
+
+	private function getRutaImagen()
     {
         return __DIR__ . '/imagenprueba/board-361516_1920.jpg';
     }

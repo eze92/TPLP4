@@ -88,6 +88,17 @@ class ModificarAnecdotaLoginTest extends TestCase
         $this->assertSame('board-361516_1920.jpg',$this->nombreArchivo());
     }
 
+    public function testConsultarTamanio(){
+        $this->webDriver->get("http://turismonacionaleinternacional/index.php");
+        $this->assertSame(735016,$this->tamanioArchivo());
+
+    }
+
+    public function testConsultarNombre(){
+         $this->webDriver->get("http://turismonacionaleinternacional/index.php");
+         $this->assertSame('board-361516_1920.jpg',$this->nombreArchivo()); 
+    }
+
     private function getRutaImagen()
     {
         return __DIR__ . '/imagenprueba/nature-1547302_1920.jpg';
@@ -104,6 +115,14 @@ class ModificarAnecdotaLoginTest extends TestCase
         $nombreArchivo = basename($nombre_fichero);
 
         return $nombreArchivo;
+    } 
+    
+    private function tamanioArchivo()
+    {
+        $nombre_fichero = __DIR__ .'../../../imagenes/board-361516_1920.jpg';
+        $tamanio_imagen = filesize($nombre_fichero);
+
+        return $tamanio_imagen;
     }   
 
     /**
