@@ -1,4 +1,5 @@
 <?php
+  session_start();
   include "conect.php";
 ?>
     <!DOCTYPE html>
@@ -76,8 +77,14 @@
                         <br>
                         <form action="agregarFuncion.php" method="POST" class="formularioagenda" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
 
-                            <label>Nombre: </label>
-                            <input type="text" id="usuario" name="usuario" required>
+                            <label>Usuario: </label>
+                             <?php  
+                        if (isset($_SESSION["usuario"]) ){
+                            echo '<input type="text" value="'.$_SESSION['usuario']. '" id="usuario" name="usuario" required readonly="readonly" >';
+                             }else{
+
+                            }
+                        ?>
                             <br>
 
                             <label>Relato: </label>

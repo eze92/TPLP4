@@ -51,10 +51,7 @@ class AgregarAnecdotaLogin extends TestCase
 
 		
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
-
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
-
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("eze92");
+        
 
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//form[@action='agregarFuncion.php']"))->click();
 

@@ -95,8 +95,8 @@
                         <form action="modificarFuncion.php" method="POST" class="formularioagenda" style="border-collapse: separate; border-spacing: 10px 5px;" enctype="multipart/form-data">
                             <input type="hidden" name="nro_trans" value="<?php echo $_GET['nro_trans']?>">
 
-                            <label>Nombre: </label>
-                            <input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>" required>
+                            <label>Usuario: </label>
+                            <input type="text" id="usuario" name="usuario" value="<?php echo $consulta[1] ?>" required readonly="readonly">
                             <br>
 
                             <label>Relato: </label>

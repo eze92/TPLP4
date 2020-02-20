@@ -52,10 +52,6 @@ class AgregarImagenGrandeTest extends TestCase
 		
       
         $this->webDriver->findElement(WebDriver\WebDriverBy::xpath("//button[@type='button']"))->click();
-     
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->click();
-       
-        $this->webDriver->findElement(WebDriver\WebDriverBy::id("usuario"))->sendKeys("eze92");
        
         $this->webDriver->findElement(WebDriver\WebDriverBy::name("anecdota"))->click();
   
@@ -75,7 +71,7 @@ class AgregarImagenGrandeTest extends TestCase
 	
 	private function getRutaImagen()
     {
-        return __DIR__ . '/imagenprueba/the-road-815297.jpg';
+        return __DIR__ . '/imagenprueba/text.txt';
     }
 	
 	private function existeArchivo() 
