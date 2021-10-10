@@ -20,4 +20,4 @@ La pagina fue realizada utilizando las siguientes herramientas:
 
 + Envio de email 
 + Creacion y eliminacion de usuario para logear en la pagina
-+ Poder cargar con el usuario crado su propia bitacora de su viaje a la cual le podra añadir una imagen para acompañar la anectadota, de su eleccion
++ Poder cargar con el usuario creado su propia bitacora de su viaje a la cual le podra añadir una imagen o foto de su agrado para acompañar la anectadota
